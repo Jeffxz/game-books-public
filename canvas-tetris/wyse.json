@@ -1,0 +1,9 @@
+{
+  "name": "canvas-tetris",
+  "uniqueIdentifier": "canvas-tetris.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "",
+  "entry": "index.html",
+  "author": "",
+  "copyright": "MIT"
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="3D-Hartwig-chess-set.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="3D-Hartwig-chess-set.gardenia-corp.com">3D-Hartwig-chess-set.gardenia-corp.com</dc:identifier>
+	<dc:title>3D-Hartwig-chess-set</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T13:17:11Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" media-type="text/html" href="index.html"/>
+	<item id="LICENSE.txt" media-type="text/plain" href="LICENSE.txt"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="css_styles.css" media-type="text/css" href="css/styles.css"/>
+	<item id="img_ajax-loader.gif" media-type="image/gif" href="img/ajax-loader.gif"/>
+	<item id="img_apple-touch-icon.png" media-type="image/png" href="img/apple-touch-icon.png"/>
+	<item id="img_back.jpg" media-type="image/jpeg" href="img/back.jpg"/>
+	<item id="img_classic-frame-border-off.png" media-type="image/png" href="img/classic-frame-border-off.png"/>
+	<item id="img_classic-frame-border.png" media-type="image/png" href="img/classic-frame-border.png"/>
+	<item id="img_classic-frame.png" media-type="image/png" href="img/classic-frame.png"/>
+	<item id="img_classic-piece-black.png" media-type="image/png" href="img/classic-piece-black.png"/>
+	<item id="img_classic-piece-white.png" media-type="image/png" href="img/classic-piece-white.png"/>
+	<item id="img_classic-sphere-black.png" media-type="image/png" href="img/classic-sphere-black.png"/>
+	<item id="img_classic-sphere-white.png" media-type="image/png" href="img/classic-sphere-white.png"/>
+	<item id="img_classic-square-black.png" media-type="image/png" href="img/classic-square-black.png"/>
+	<item id="img_classic-square-white.png" media-type="image/png" href="img/classic-square-white.png"/>
+	<item id="img_icons.png" media-type="image/png" href="img/icons.png"/>
+	<item id="img_logo.png" media-type="image/png" href="img/logo.png"/>
+	<item id="img_marble-frame-border-off.png" media-type="image/png" href="img/marble-frame-border-off.png"/>
+	<item id="img_marble-frame-border.png" media-type="image/png" href="img/marble-frame-border.png"/>
+	<item id="img_marble-frame.png" media-type="image/png" href="img/marble-frame.png"/>
+	<item id="img_marble-piece-black.png" media-type="image/png" href="img/marble-piece-black.png"/>
+	<item id="img_marble-piece-white.png" media-type="image/png" href="img/marble-piece-white.png"/>
+	<item id="img_marble-sphere-black.png" media-type="image/png" href="img/marble-sphere-black.png"/>
+	<item id="img_marble-sphere-white.png" media-type="image/png" href="img/marble-sphere-white.png"/>
+	<item id="img_marble-square-black.png" media-type="image/png" href="img/marble-square-black.png"/>
+	<item id="img_marble-square-white.png" media-type="image/png" href="img/marble-square-white.png"/>
+	<item id="js_app.js" media-type="application/javascript" href="js/app.js"/>
+	<item id="js_libraries.js" media-type="application/javascript" href="js/libraries.js"/>
+	<item id="js_prefixfree.min.js" media-type="application/javascript" href="js/prefixfree.min.js"/>
+	<item id="js_scripts.min.js" media-type="application/javascript" href="js/scripts.min.js"/>
+	<item id="mckps_fw-back.png" media-type="image/png" href="mckps/fw-back.png"/>
+	<item id="mckps_fw-classic.png" media-type="image/png" href="mckps/fw-classic.png"/>
+	<item id="mckps_fw-game.png" media-type="image/png" href="mckps/fw-game.png"/>
+	<item id="mckps_fw-icons.png" media-type="image/png" href="mckps/fw-icons.png"/>
+	<item id="mckps_fw-logo.png" media-type="image/png" href="mckps/fw-logo.png"/>
+	<item id="mckps_fw-marble.png" media-type="image/png" href="mckps/fw-marble.png"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

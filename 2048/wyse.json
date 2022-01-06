@@ -1,0 +1,13 @@
+{
+  "name": "2048",
+  "uniqueIdentifier": "2048.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "HTML game from https://github.com/gabrielecirulli/2048",
+  "entry": "index.html",
+  "viewport": {
+    "width": 800,
+    "height": 600
+  },
+  "author": "gabrielecirulli",
+  "copyright": "MIT"
+}

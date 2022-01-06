@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="canvas-tetris.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="canvas-tetris.gardenia-corp.com">canvas-tetris.gardenia-corp.com</dc:identifier>
+	<dc:title>canvas-tetris</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T13:30:55Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" media-type="text/html" href="index.html"/>
+	<item id="LICENSE.md" media-type="text/markdown" href="LICENSE.md"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="js_controller.js" media-type="application/javascript" href="js/controller.js"/>
+	<item id="js_render.js" media-type="application/javascript" href="js/render.js"/>
+	<item id="js_tetris.js" media-type="application/javascript" href="js/tetris.js"/>
+	<item id="sound_pop.ogg" media-type="audio/ogg" href="sound/pop.ogg"/>
+	<item id="style.css" media-type="text/css" href="style.css"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

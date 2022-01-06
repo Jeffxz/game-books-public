@@ -1,0 +1,9 @@
+{
+  "name": "flexboxfroggy",
+  "uniqueIdentifier": "flexboxfroggy.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "Flexbox Froggy is a game for learning CSS flexbox. Check it out at flexboxfroggy.com.",
+  "entry": "index.html",
+  "author": "thomaspark",
+  "copyright": "MIT"
+}

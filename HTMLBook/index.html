@@ -1,0 +1,1190 @@
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="utf-8"><meta name="generator" content="ReSpec 25.6.0"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><style>.issue-label{text-transform:initial}.warning>p:first-child{margin-top:0}.warning{padding:.5em;border-left-width:.5em;border-left-style:solid}span.warning{padding:.1em .5em .15em}.issue.closed span.issue-number{text-decoration:line-through}.warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}.warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}li.task-list-item{list-style:none}input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}.issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}</style>
+    <title>HTMLBook</title>
+    
+    
+    
+    <style type="text/css">
+span[data-type=footnote] {
+  background-color: #d3d3d3;
+  border: solid 1px black;
+  border-radius: 0.25em;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  font-size: smaller;
+}
+</style>
+  <style id="respec-mainstyle">@keyframes pop{0%{transform:scale(1,1)}25%{transform:scale(1.25,1.25);opacity:.75}100%{transform:scale(1,1)}}.hljs{background:0 0!important}a abbr,h1 abbr,h2 abbr,h3 abbr,h4 abbr,h5 abbr,h6 abbr{border:none}dfn{font-weight:700}a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}a.bibref{text-decoration:none}.respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}.respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}@supports not (text-decoration:red wavy underline){.respec-offending-element:not(pre){display:inline-block}.respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}}#references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}cite .bibref{font-style:normal}code{color:#c63501}th code{color:inherit}a[href].orcid{padding-left:4px;padding-right:4px}a[href].orcid>svg{margin-bottom:-2px}.toc a,.tof a{text-decoration:none}a .figno,a .secno{color:#000}ol.tof,ul.tof{list-style:none outside none}.caption{margin-top:.5em;font-style:italic}table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}.simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}.simple th a{color:#fff;padding:3px 5px;text-align:left}.simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}.simple td{padding:3px 10px;border-top:1px solid #ddd}.simple tr:nth-child(even){background:#f0f6ff}.section dd>p:first-child{margin-top:0}.section dd>p:last-child{margin-bottom:0}.section dd{margin-bottom:1em}.section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}#issue-summary>ul,.respec-dfn-list{column-count:2}#issue-summary li,.respec-dfn-list li{list-style:none}details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}details.respec-tests-details>*{padding-right:2em}details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}details.respec-tests-details>ul{width:100%;margin-top:-.3em}details.respec-tests-details>li{padding-left:1em}a[href].self-link:hover{opacity:1;text-decoration:none;background-color:transparent}h2,h3,h4,h5,h6{position:relative}aside.example .marker>a.self-link{color:inherit}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{border:none;color:inherit;font-size:83%;height:2em;left:-1.6em;opacity:.5;position:absolute;text-align:center;text-decoration:none;top:0;transition:opacity .2s;width:2em}h2>a.self-link::before,h3>a.self-link::before,h4>a.self-link::before,h5>a.self-link::before,h6>a.self-link::before{content:"§";display:block}@media (max-width:767px){dd{margin-left:0}h2>a.self-link,h3>a.self-link,h4>a.self-link,h5>a.self-link,h6>a.self-link{left:auto;top:auto}}@media print{.removeOnSave{display:none}}</style><meta name="description" content="Let’s write books in HTML! HTMLBook is an open, XHTML5-based standard for the authoring and production of both print and digital books. HTMLBook is built on the following premises:"><style>.hljs{display:block;overflow-x:auto;padding:.5em;color:#383a42;background:#fafafa}.hljs-comment,.hljs-quote{color:#717277;font-style:italic}.hljs-doctag,.hljs-formula,.hljs-keyword{color:#a626a4}.hljs-deletion,.hljs-name,.hljs-section,.hljs-selector-tag,.hljs-subst{color:#ca4706;font-weight:700}.hljs-literal{color:#0b76c5}.hljs-addition,.hljs-attribute,.hljs-meta-string,.hljs-regexp,.hljs-string{color:#42803c}.hljs-built_in,.hljs-class .hljs-title{color:#9a6a01}.hljs-attr,.hljs-number,.hljs-selector-attr,.hljs-selector-class,.hljs-selector-pseudo,.hljs-template-variable,.hljs-type,.hljs-variable{color:#986801}.hljs-bullet,.hljs-link,.hljs-meta,.hljs-selector-id,.hljs-symbol,.hljs-title{color:#336ae3}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}.hljs-link{text-decoration:underline}</style><style>var{position:relative;cursor:pointer}var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}</style><script id="initialUserConfig" type="application/json">{
+  "additionalCopyrightHolders": "Copyright &copy; 2014 O&#x2019;Reilly Media, Inc.",
+  "specStatus": "unofficial",
+  "shortName": "htmlbook",
+  "editors": [
+    {
+      "name": "Sanders Kleinfeld",
+      "url": "http://oreilly.com",
+      "company": "O&#x2019;Reilly Media, Inc",
+      "companyURL": "http://oreilly.com"
+    }
+  ],
+  "localBiblio": {
+    "DITA": {
+      "title": "Darwin Information Typing Architecture (DITA) Version 1.2",
+      "href": "http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html",
+      "authors": [
+        "Kristen James Eberlein",
+        "Robert D. Anderson",
+        "Gershon Joseph"
+      ],
+      "id": "dita"
+    },
+    "DOCBOOK": {
+      "title": "The DocBook Document Type",
+      "href": "http://www.docbook.org/specs/docbook-4.5-spec.html",
+      "authors": [
+        "Norman Walsh"
+      ],
+      "publisher": "OASIS",
+      "id": "docbook"
+    },
+    "EPUB3": {
+      "title": "EPUB 3 Overview",
+      "href": "http://www.idpf.org/epub/30/spec/",
+      "publisher": "IDPF",
+      "id": "epub3"
+    },
+    "EPUB3SSV": {
+      "title": "EPUB 3 Structural Semantics Vocabulary",
+      "href": "http://www.idpf.org/epub/vocab/structure/",
+      "publisher": "IDPF",
+      "id": "epub3ssv"
+    },
+    "EPUBINDEX": {
+      "title": "EPUB Indexes 1.0",
+      "href": "http://www.idpf.org/epub/idx/",
+      "publisher": "IDPF",
+      "id": "epubindex"
+    }
+  },
+  "publishISODate": "2016-02-16T00:00:00.000Z",
+  "generatedSubtitle": "Unofficial Draft 16 February 2016"
+}</script><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-UD"></head>
+  <body class="h-entry informative"><div class="head">
+    <a class="logo" href="https://www.w3.org/"><img alt="W3C" width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C"></a> <h1 id="title" class="title">HTMLBook</h1>
+    
+    <h2>
+      Unofficial Draft
+      <time class="dt-published" datetime="2016-02-16">16 February 2016</time>
+    </h2>
+    <dl>
+      
+      
+      
+      
+      
+      
+      
+      <dt>Editor:</dt>
+      <dd class="p-author h-card vcard"><a class="u-url url p-name fn" href="http://oreilly.com">Sanders Kleinfeld</a>
+            (<a class="p-org org h-org h-card" href="http://oreilly.com">O’Reilly Media, Inc</a>)
+          </dd>
+      
+      
+      
+    </dl>
+    
+    
+    
+    <p class="copyright">Copyright © 2014 O’Reilly Media, Inc.</p>
+    <hr title="Separator for header">
+  </div>
+    <section id="abstract" class="introductory"><h2>Abstract</h2>
+      <p>Let’s write books in HTML! HTMLBook is an open, XHTML5-based standard for the authoring and production of both print and digital books. HTMLBook is built on the following premises:</p>
+      <ul>
+        <li>Books are timeless. The basic “book” structure has persisted for hundreds of years and will continue to persist for our lifetimes, be it in digital or print form.</li>
+        <li>HTML is the markup language of the world for the foreseeable future.</li>
+        <li>Single-source document processing will remain valuable for the foreseeable future.</li>
+      </ul>
+      <p>As such, HTMLBook can be characterized in the following ways:</p>
+      <ul>
+        <li>HTMLBook is a subset of XHTML5. All HTMLBook is XHTML5, but not all XHTML5 is HTMLBook.</li>
+        <li>HTMLBook contains no additional elements or attributes outside of the XHTML5 specification.</li>
+        <li>HTMLBook is semantically tailored to the structure of a book, including more complex content used in technical and reference documents.</li>
+        <li>HTMLBook is defined with and can be validated against an XML schema.</li>
+        <li>HTMLBook stylesheets are written in CSS.</li>
+      </ul>
+    </section>
+    <section id="sotd" class="introductory"><h2>Status of This Document</h2><p>
+      This document is draft of a potential specification. It has no official
+      standing of any kind and does not represent the support or consensus of
+      any standards organization.
+    </p>
+    </section><nav id="toc"><h2 class="introductory" id="table-of-contents">Table of Contents</h2><ol class="toc"><li class="tocline"><a class="tocxref" href="#notes-on-the-htmlbook-specification"><bdi class="secno">1. </bdi>Notes on the HTMLBook Specification</a></li><li class="tocline"><a class="tocxref" href="#revision-history-and-notes"><bdi class="secno">2. </bdi>Revision History and Notes</a></li><li class="tocline"><a class="tocxref" href="#_book_component_elements"><bdi class="secno">3. </bdi>Book Component elements</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#_book"><bdi class="secno">3.1 </bdi>Book</a></li><li class="tocline"><a class="tocxref" href="#_chapter"><bdi class="secno">3.2 </bdi>Chapter</a></li><li class="tocline"><a class="tocxref" href="#_appendix"><bdi class="secno">3.3 </bdi>Appendix</a></li><li class="tocline"><a class="tocxref" href="#_bibliography"><bdi class="secno">3.4 </bdi>Bibliography</a></li><li class="tocline"><a class="tocxref" href="#glossary"><bdi class="secno">3.5 </bdi>Glossary</a></li><li class="tocline"><a class="tocxref" href="#_preface"><bdi class="secno">3.6 </bdi>Preface</a></li><li class="tocline"><a class="tocxref" href="#_frontmatter"><bdi class="secno">3.7 </bdi>Frontmatter</a></li><li class="tocline"><a class="tocxref" href="#_backmatter"><bdi class="secno">3.8 </bdi>Backmatter</a></li><li class="tocline"><a class="tocxref" href="#_part"><bdi class="secno">3.9 </bdi>Part</a></li><li class="tocline"><a class="tocxref" href="#_table_of_contents"><bdi class="secno">3.10 </bdi>Table of Contents</a></li><li class="tocline"><a class="tocxref" href="#_index"><bdi class="secno">3.11 </bdi>Index</a></li><li class="tocline"><a class="tocxref" href="#_sections"><bdi class="secno">3.12 </bdi>Sections</a></li></ol></li><li class="tocline"><a class="tocxref" href="#_block_elements"><bdi class="secno">4. </bdi>Block Elements</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#_paragraph"><bdi class="secno">4.1 </bdi>Paragraph</a></li><li class="tocline"><a class="tocxref" href="#_sidebar"><bdi class="secno">4.2 </bdi>Sidebar</a></li><li class="tocline"><a class="tocxref" href="#_admonitions"><bdi class="secno">4.3 </bdi>Admonitions</a></li><li class="tocline"><a class="tocxref" href="#_tables"><bdi class="secno">4.4 </bdi>Tables</a></li><li class="tocline"><a class="tocxref" href="#_figures"><bdi class="secno">4.5 </bdi>Figures</a></li><li class="tocline"><a class="tocxref" href="#_examples"><bdi class="secno">4.6 </bdi>Examples</a></li><li class="tocline"><a class="tocxref" href="#_code_listings"><bdi class="secno">4.7 </bdi>Code listings</a></li><li class="tocline"><a class="tocxref" href="#_ordered_lists"><bdi class="secno">4.8 </bdi>Ordered lists</a></li><li class="tocline"><a class="tocxref" href="#_itemized_lists"><bdi class="secno">4.9 </bdi>Itemized lists</a></li><li class="tocline"><a class="tocxref" href="#_definition_lists"><bdi class="secno">4.10 </bdi>Definition lists</a></li><li class="tocline"><a class="tocxref" href="#_blockquote"><bdi class="secno">4.11 </bdi>Blockquote</a></li><li class="tocline"><a class="tocxref" href="#_equation"><bdi class="secno">4.12 </bdi>Equation</a></li><li class="tocline"><a class="tocxref" href="#_refentry"><bdi class="secno">4.13 </bdi>Reference Entries (refentries)</a></li></ol></li><li class="tocline"><a class="tocxref" href="#_inline_elements"><bdi class="secno">5. </bdi>Inline Elements</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#_emphasis_generally_for_italic"><bdi class="secno">5.1 </bdi>Emphasis (generally for italic)</a></li><li class="tocline"><a class="tocxref" href="#_strong_generally_for_bold"><bdi class="secno">5.2 </bdi>Strong (generally for bold)</a></li><li class="tocline"><a class="tocxref" href="#_literal_for_inline_code_elements_variables_functions_etc"><bdi class="secno">5.3 </bdi>Literal (for inline code elements: variables, functions, etc.)</a></li><li class="tocline"><a class="tocxref" href="#_general_purpose_phrase_markup_for_other_styling_underline_strikethrough_etc"><bdi class="secno">5.4 </bdi>General-purpose phrase markup for other styling</a></li><li class="tocline"><a class="tocxref" href="#_footnote_endnote"><bdi class="secno">5.5 </bdi>Footnote, endnote</a></li><li class="tocline"><a class="tocxref" href="#_cross_references"><bdi class="secno">5.6 </bdi>Cross-references</a></li><li class="tocline"><a class="tocxref" href="#_index_term"><bdi class="secno">5.7 </bdi>Index Term</a></li><li class="tocline"><a class="tocxref" href="#_superscripts"><bdi class="secno">5.8 </bdi>Superscripts</a></li><li class="tocline"><a class="tocxref" href="#_subscripts"><bdi class="secno">5.9 </bdi>Subscripts</a></li></ol></li><li class="tocline"><a class="tocxref" href="#_heading_elements"><bdi class="secno">6. </bdi>Heading Elements</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#_headings"><bdi class="secno">6.1 </bdi>Headings</a></li><li class="tocline"><a class="tocxref" href="#header_block"><bdi class="secno">6.2 </bdi>Header</a></li></ol></li><li class="tocline"><a class="tocxref" href="#_interactive_elements"><bdi class="secno">7. </bdi>Interactive Elements</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#_video"><bdi class="secno">7.1 </bdi>Video</a></li><li class="tocline"><a class="tocxref" href="#_audio"><bdi class="secno">7.2 </bdi>Audio</a></li><li class="tocline"><a class="tocxref" href="#_canvas"><bdi class="secno">7.3 </bdi>Canvas</a></li></ol></li><li class="tocline"><a class="tocxref" href="#_comments"><bdi class="secno">8. </bdi>Comments</a></li><li class="tocline"><a class="tocxref" href="#_metadata"><bdi class="secno">9. </bdi>Metadata</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#_metadata_points"><bdi class="secno">9.1 </bdi>Metadata points</a></li></ol></li><li class="tocline"><a class="tocxref" href="#_element_classification"><bdi class="secno">10. </bdi>Element Classification</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#block_elements"><bdi class="secno">10.1 </bdi>Block Elements</a></li><li class="tocline"><a class="tocxref" href="#inline_elements"><bdi class="secno">10.2 </bdi>Inline Elements</a></li></ol></li><li class="tocline"><a class="tocxref" href="#references"><bdi class="secno">A. </bdi>References</a><ol class="toc"><li class="tocline"><a class="tocxref" href="#normative-references"><bdi class="secno">A.1 </bdi>
+        Normative references
+      </a></li><li class="tocline"><a class="tocxref" href="#informative-references"><bdi class="secno">A.2 </bdi>
+        Informative references
+      </a></li></ol></li></ol></nav>
+    <section id="notes-on-the-htmlbook-specification">
+      <h2 id="x1-notes-on-the-htmlbook-specification"><bdi class="secno">1. </bdi>Notes on the HTMLBook Specification<a class="self-link" aria-label="§" href="#notes-on-the-htmlbook-specification"></a></h2>
+      <p>Requirements for HTML5 elements in the HTMLBook specification are below. Special semantic inflections for <code>data-type</code> attributes, unless otherwise noted, come from <a href="http://idpf.org/epub/vocab/structure/">EPUB 3 Structural Semantics Vocabulary</a></p>
+      <p>Many content models refer to “Block Elements” or “Inline Elements”; please see <a href="#block_elements">Block Elements</a> and <a href="#inline_elements">Inline Elements</a> for the corresponding list of HTML5 elements that belong to each of these categories.</p>
+      <p>If no content model or attribute requirements are explicitly specified, then HTMLBook adopts the corresponding requirements in the [<cite class="respec-offending-element" title="Normative references in informative sections are not allowed. Remove '!' from the start of the reference `[[!HTML5]]`" id="respec-offender-normative-references-in-informative-sections-are-not-allowed-remove-from-the-start-of-the-reference-html5"><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] Specification</p>
+    </section>
+    <section id="revision-history-and-notes">
+      <h2 id="x2-revision-history-and-notes"><bdi class="secno">2. </bdi>Revision History and Notes<a class="self-link" aria-label="§" href="#revision-history-and-notes"></a></h2>
+      <dl>
+	<dt>16 September 2015</dt>
+	<dd>Added informative section on reference entries</dd>
+	<dt>25 February 2015</dt>
+	<dd>Clarified HTMLBook specifications for inline semantics/tagging</dd>
+	<dt>8 April 2014</dt>
+	<dd>Updated specifications for section subtitles to comply with best practices set forth in <a href="http://www.w3.org/TR/html5/common-idioms.html#common-idioms">“Common idioms without dedicated elements”</a> in [<cite><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] Specification.</dd>
+        <dt>29 December 2013</dt>
+        <dd>Minor revisions for clarity</dd>
+        <dt>13 August 2013</dt>
+        <dd>Revised specification for footnote markup</dd>
+        <dt>3 July 2013</dt>
+        <dd>Changed spec to use the attribute <code>data-type</code> for specifying book-specific semantics instead of <code>class</code>. The <code>class</code> attribute is
+now free to be used for whatever user-defined semantics are desired, and there are no restrictions on <code>class</code> values. Users of the spec may want to replicate <code>data-type</code> values in the <code>class</code> attribute to facilitate CSS styling, but this is completely optional.</dd>
+        <dt>19 April 2013</dt>
+        <dd>First release of Working Draft</dd>
+      </dl>
+    </section>
+    <section data-type="sect1" id="_book_component_elements">
+      <h2 id="x3-book-component-elements"><bdi class="secno">3. </bdi>Book Component elements<a class="self-link" aria-label="§" href="#_book_component_elements"></a></h2>
+      <section data-type="sect2" id="_book">
+        <h3 id="x3-1-book"><bdi class="secno">3.1 </bdi>Book<a class="self-link" aria-label="§" href="#_book"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;body&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="book"</code> <span data-type="footnote">(Not in [<cite><a class="bibref" data-link-type="biblio" href="#bib-epub3ssv" title="EPUB 3 Structural Semantics Vocabulary">EPUB3SSV</a></cite>]; from [<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>])</span></p>
+        <p><strong>Content model</strong>: Optional <code>&lt;h1&gt;</code> that contains book title, or <a href="#header_block">Header block</a> that contains book title and optional subtitle content; then one or more <a href="#_book_component_elements">Book Component</a> elements as children (<code>&lt;div&gt;</code> for <a href="#_part">Part</a> elements, <code>&lt;nav&gt;</code> for <a href="#_table_of_contents">Table of Contents</a>, and <code>&lt;section&gt;</code> elements for all other book divisions)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" data-code-language="html" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">body</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"book"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>jQuery Cookbook<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"chapter"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Chapter content here --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span></code></pre>
+        <p><strong>Note</strong>: Just as in standard HTML5, <code>&lt;body&gt;</code> is a child of the root <code>&lt;html&gt;</code> element.</p>
+      </section>
+      <section data-type="sect2" id="_chapter">
+        <h3 id="x3-2-chapter"><bdi class="secno">3.2 </bdi>Chapter<a class="self-link" aria-label="§" href="#_chapter"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="chapter"</code></p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains chapter title, or <a href="#header_block">Header block</a> that contains chapter title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"chapter"</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- h1 used for all chapter titles --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Chapter Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Chapter content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect1"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Section content here... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_appendix">
+        <h3 id="x3-3-appendix"><bdi class="secno">3.3 </bdi>Appendix<a class="self-link" aria-label="§" href="#_appendix"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="appendix"</code> or <code>data-type="afterword"</code>, depending on content</p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains appendix title, or <a href="#header_block">Header block</a> that contains appendix title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"appendix"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Appendix Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Appendix content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect1"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Section content here... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_bibliography">
+        <h3 id="x3-4-bibliography"><bdi class="secno">3.4 </bdi>Bibliography<a class="self-link" aria-label="§" href="#_bibliography"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="bibliography"</code></p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains bibliography title, or <a href="#header_block">Header block</a> that contains bibliography title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"bibliography"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Bibliography Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Bibliography content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect1"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Section content here... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="glossary">
+        <h3 id="x3-5-glossary"><bdi class="secno">3.5 </bdi>Glossary<a class="self-link" aria-label="§" href="#glossary"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="glossary"</code></p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains glossary title, or <a href="#header_block">Header block</a> that contains glossary title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p><strong>Best practices</strong>: List of glossary terms should be marked up using <code>&lt;dl&gt;</code> elements with a <code>data-type</code> of <code>"glossary"</code>, with <code>&lt;dt&gt;</code> children with a <code>data-type</code> of <code>"glossterm"</code> and <code>&lt;dd&gt;</code> children with a <code>data-type</code> of <code>"glossdef"</code>. Term text should be wrapped in a <code>&lt;dfn&gt;</code>. However, none of this is formally required by the spec.</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"glossary"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Glossary Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">dl</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"glossary"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dt</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"glossterm"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">dfn</span>&gt;</span>jQuery<span class="hljs-tag">&lt;/<span class="hljs-name">dfn</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dt</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">dd</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"glossdef"</span>&gt;</span>
+      Widely used JavaScript library
+    <span class="hljs-tag">&lt;/<span class="hljs-name">dd</span>&gt;</span>
+   <span class="hljs-tag">&lt;/<span class="hljs-name">dl</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_preface">
+        <h3 id="x3-6-preface"><bdi class="secno">3.6 </bdi>Preface<a class="self-link" aria-label="§" href="#_preface"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="preface"</code>, <code>data-type="foreword"</code>, or <code>data-type="introduction"</code>, depending on content</p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains preface title, or <a href="#header_block">Header block</a> that contains preface title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"preface"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Preface Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Preface content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect1"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Section content here... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_frontmatter">
+        <h3 id="x3-7-frontmatter"><bdi class="secno">3.7 </bdi>Frontmatter<a class="self-link" aria-label="§" href="#_frontmatter"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="halftitlepage"</code>, <code>data-type="titlepage"</code>, <code>data-type="copyright-page"</code>, or <code>data-type="dedication"</code>, depending on content</p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains frontmatter section title, or <a href="#header_block">Header block</a> that contains frontmatter title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"titlepage"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Python in a Nutshell<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>By Alex Martelli<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_backmatter">
+        <h3 id="x3-8-backmatter"><bdi class="secno">3.8 </bdi>Backmatter<a class="self-link" aria-label="§" href="#_backmatter"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="colophon"</code>, <code>data-type="acknowledgments"</code>, <code>data-type="afterword"</code>, or <code>data-type="conclusion"</code>, depending on content</p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains backmatter section title, or <a href="#header_block">Header block</a> that contains backmatter title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"colophon"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Colophon Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Colophon content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect1"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Section content here... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_part">
+        <h3 id="x3-9-part"><bdi class="secno">3.9 </bdi>Part<a class="self-link" aria-label="§" href="#_part"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;div&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="part"</code></p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains part title, or <a href="#header_block">Header block</a> that contains part title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a> that compose the optional Part introduction; then one or more <code>&lt;section&gt;</code> elements representing <a href="#_book_component_elements">Book Component</a> children other than a Part</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"part"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Part One: Introduction to Backbone.js<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Part Introduction...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"chapter"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Chapter content here --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_table_of_contents">
+        <h3 id="x3-10-table-of-contents"><bdi class="secno">3.10 </bdi>Table of Contents<a class="self-link" aria-label="§" href="#_table_of_contents"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;nav&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="toc"</code></p>
+        <p><strong>Content Model</strong>: The TOC must be conformant to the specs for the [<cite><a class="bibref" data-link-type="biblio" href="#bib-epub3" title="EPUB 3 Overview">EPUB3</a></cite>] <a href="http://www.idpf.org/epub/30/spec/epub30-contentdocs-20111011.html#sec-xhtml-nav">Navigation document</a>. First child is zero or more <a href="#_headings">Heading elements</a> (<code>&lt;h1&gt;-&lt;h6&gt;</code>), followed by an <code>&lt;ol&gt;</code> (with <code>&lt;li&gt;</code> children that can contain only a <code>&lt;span&gt;</code> element or an <code>&lt;a&gt;</code> element plus an optional <code>&lt;ol&gt;</code> child)</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"toc"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Table of Contents<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+   <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"examples_page.html"</span>&gt;</span>A Note Regarding Supplemental Files<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"pr02.html"</span>&gt;</span>Foreword<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"pr03.html"</span>&gt;</span>Contributors<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+       <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"pr03.html#I_sect1_d1e154"</span>&gt;</span>Chapter Authors<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"pr03.html#I_sect1_d1e260"</span>&gt;</span>Tech Editors<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+       <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+     <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_index">
+        <h3 id="x3-11-index"><bdi class="secno">3.11 </bdi>Index<a class="self-link" aria-label="§" href="#_index"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="index"</code></p>
+        <p><strong>Content model</strong>: First child must be either <code>&lt;h1&gt;</code> that contains index title, or <a href="#header_block">Header block</a> that contains index title and optional subtitle content; then zero or more <a href="#block_elements">Block Elements</a>; then zero or more <a href="#_sections">Sect1</a> children (<code>&lt;section data-type="sect1"&gt;</code>)</p>
+        <p><strong>Best practices</strong>: HTMLBook recommends following the [<cite><a class="bibref" data-link-type="biblio" href="#bib-epubindex" title="EPUB Indexes 1.0">EPUBINDEX</a></cite>] specification and using <code>&lt;ol&gt;</code>/<code>&lt;li&gt;</code> elements for marking up index entries, with <code>data-type</code> attributes used for semantic inflection as appropriate, but none of this is a formal spec requirement</p>
+        <p>
+          <strong>Example</strong>
+        </p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Index Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>A<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-term"</span>&gt;</span>AsciiDoc, <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"ch01#asciidoc"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-locator"</span>&gt;</span>All about AsciiDoc<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+	<span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+           <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-term"</span>&gt;</span>conversion to HTML, 
+             <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"ch01#asctohtml"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-locator"</span>&gt;</span>AsciiDoc Output Formats<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+           <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-term"</span>&gt;</span>azalea, <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"ch01#azalea"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"index-locator"</span>&gt;</span>Shrubbery<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_sections">
+        <h3 id="x3-12-sections"><bdi class="secno">3.12 </bdi>Sections<a class="self-link" aria-label="§" href="#_sections"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;section&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="sect1"</code>, <code>data-type="sect2"</code>, <code>data-type="sect3"</code>, <code>data-type="sect4"</code>, <code>data-type="sect5"</code> <span data-type="footnote">(From [<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>] vocabulary)</span>, depending on hierarchy level. <code>sect1</code> is used for <code>&lt;section&gt;</code> elements nested directly in main <a href="#_book_component_elements">Book Components</a> (<code>"chapter"</code>, <code>"appendix"</code>, etc.). <code>sect2</code> is used for <code>&lt;section&gt;</code> elements nested in a <code>sect1</code> <code>&lt;section&gt;</code>, <code>sect3</code> is used for <code>&lt;section&gt;</code> elements nested in a <code>sect2</code> <code>&lt;section&gt;</code>, and so on.</p>
+        <p><strong>Content model</strong>: The first child must either be a main <a href="#_headings">heading</a> element corresponding to the hierarchy level indicated by <code>data-type</code> value, as follows:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs abnf"><span class="hljs-string">"sect1"</span> -&gt; h1
+<span class="hljs-string">"sect2"</span> -&gt; h2
+<span class="hljs-string">"sect3"</span> -&gt; h3
+<span class="hljs-string">"sect4"</span> -&gt; h4
+<span class="hljs-string">"sect5"</span> -&gt; h5</code></pre>
+<p>or a <a href="#header_block">Header block</a> that contains section title and optional subtitle content. This is followed by zero or more <a href="#block_elements">Block Elements</a>, followed by zero or more <code>&lt;section&gt;</code> elements with a <code>data-type</code> value one level lower in the hierarchy, as long as the parent section is a <code>"sect4"</code> or higher (e.g., <code>&lt;section data-type="sect4"&gt;</code> nested in <code>&lt;section data-type="sect3"&gt;</code>)</p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>A-Head<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>If you httpparty, you must party hard<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Some more paragraphs --&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sect2"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>B-Head<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>What's the frequency, Kenneth?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- And so on... --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+    </section>
+    <section data-type="sect1" id="_block_elements">
+      <h2 id="x4-block-elements"><bdi class="secno">4. </bdi>Block Elements<a class="self-link" aria-label="§" href="#_block_elements"></a></h2>
+      <section data-type="sect2" id="_paragraph">
+        <h3 id="x4-1-paragraph"><bdi class="secno">4.1 </bdi>Paragraph<a class="self-link" aria-label="§" href="#_paragraph"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;p&gt;</code></p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;This is <span class="hljs-selector-tag">a</span> standard paragraph with some &lt;<span class="hljs-selector-tag">em</span>&gt;emphasized text&lt;/<span class="hljs-selector-tag">em</span>&gt;&lt;/<span class="hljs-selector-tag">p</span>&gt;</code></pre>
+      </section>
+      <section data-type="sect2" id="_sidebar">
+        <h3 id="x4-2-sidebar"><bdi class="secno">4.2 </bdi>Sidebar<a class="self-link" aria-label="§" href="#_sidebar"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;aside&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="sidebar"</code></p>
+        <p><strong>Content model</strong>: Zero or one <code>&lt;h5&gt;</code> element that contains the sidebar title); then zero or more <a href="#block_elements">Block Elements</a></p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">aside</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"sidebar"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Amusing Digression<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Did you know that in Boston, they call it "soda", and in Chicago, they call it "pop"?<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_admonitions">
+        <h3 id="x4-3-admonitions"><bdi class="secno">4.3 </bdi>Admonitions<a class="self-link" aria-label="§" href="#_admonitions"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;div&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="note"</code>, <code>data-type="warning"</code>, <code>data-type="tip"</code>, <code>data-type="caution"</code>, or <code>data-type="important"</code>, depending on the content within</p>
+        <p><strong>Content model</strong>: Either of the following content models is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code> elements, followed by zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Examples</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"note"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Helpful Info<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Please take note of this important information<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"warning"</span>&gt;</span>Make sure to get your AsciiDoc markup right!<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_tables">
+        <h3 id="x4-4-tables"><bdi class="secno">4.4 </bdi>Tables<a class="self-link" aria-label="§" href="#_tables"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;table&gt;</code></p>
+        <p><strong>Content model</strong>: Zero or one <code>&lt;caption&gt;</code> elements (for titled/captioned tables); then zero or more <code>&lt;colgroup&gt;</code> elements; then zero or more <code>&lt;thead&gt;</code> elements; then a choice between either zero or more <code>&lt;tbody&gt;</code> elements, or zero or more <code>&lt;tr&gt;</code> elements; then zero or more <code>&lt;tfoot&gt;</code> elements</p>
+        <p><strong>Content model for <code>&lt;caption&gt;</code></strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>Zero or more <code>&lt;p&gt;</code> and/or <code>&lt;div&gt;</code> elements</p>
+          </li>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Content model for <code>&lt;colgroup&gt;</code></strong>: Mirrors [<cite><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] Specification</p>
+        <p><strong>Content models for <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>, and <code>&lt;tfoot&gt;</code></strong>: Mirror [<cite><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] Specification</p>
+        <p><strong>Content model for <code>&lt;tr&gt;</code></strong>: Mirrors [<cite><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] Specification, but see content model below for rules for child <code>&lt;td&gt;</code> and <code>&lt;th&gt;</code> elements</p>
+        <p><strong>Content model for <code>&lt;td&gt;</code> and <code>&lt;th&gt;</code> elements</strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Examples</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">caption</span>&gt;</span>State capitals<span class="hljs-tag">&lt;/<span class="hljs-name">caption</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Capital<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Massachusetts<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Boston<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- And so on --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>First<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Middle Initial<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Last<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Alfred<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>E.<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span>Newman<span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- And so on --&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_figures">
+        <h3 id="x4-5-figures"><bdi class="secno">4.5 </bdi>Figures<a class="self-link" aria-label="§" href="#_figures"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;figure&gt;</code></p>
+        <p><strong>Content model</strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>A <code>&lt;figcaption&gt;</code> element followed by zero or more <a href="#block_elements">Block Elements</a> and/or <code>&lt;img&gt;</code> elements</p>
+          </li>
+          <li>
+            <p>Zero or more <a href="#block_elements">Block Elements</a> and/or <code>&lt;img&gt;</code> elements, followed by a <code>&lt;figcaption&gt;</code> element</p>
+          </li>
+        </ul>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Adorable cat<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"cute_kitty.gif"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Photo of an adorable cat"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_examples">
+        <h3 id="x4-6-examples"><bdi class="secno">4.6 </bdi>Examples<a class="self-link" aria-label="§" href="#_examples"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;div&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="example"</code></p>
+        <p><strong>Content model</strong>: Either of the following content models is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code> elements (for title and subtitles), followed by zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"example"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Hello World in Python<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"programlisting"</span>&gt;</span>print "Hello World"<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_code_listings">
+        <h3 id="x4-7-code-listings"><bdi class="secno">4.7 </bdi>Code listings<a class="self-link" aria-label="§" href="#_code_listings"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;pre&gt;</code></p>
+<p><strong>Attribute requirements:</strong> <code>data-type="programlisting"</code></p>
+        <p><strong>Optional HTMLBook-specific attribute</strong>: <code>data-code-language</code>, used to indicate language of code listing (e.g., <code>data-code-language="python"</code>)</p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"programlisting"</span>&gt;</span>print "<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>"<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_ordered_lists">
+        <h3 id="x4-8-ordered-lists"><bdi class="secno">4.8 </bdi>Ordered lists<a class="self-link" aria-label="§" href="#_ordered_lists"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;ol&gt;</code></p>
+        <p><strong>Content model</strong>: Zero or more <code>&lt;li&gt;</code> children for each list item</p>
+        <p><strong>Content model for <code>&lt;li&gt;</code> children</strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ol</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Step 1<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Step 2<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Step 2 continued<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- And so on --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_itemized_lists">
+        <h3 id="x4-9-itemized-lists"><bdi class="secno">4.9 </bdi>Itemized lists<a class="self-link" aria-label="§" href="#_itemized_lists"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;ul&gt;</code></p>
+        <p><strong>Content model</strong>: Zero or more <code>&lt;li&gt;</code> children for each list item</p>
+        <p><strong>Content model for <code>&lt;li&gt;</code> children</strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Red<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>Orange<span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+<span class="hljs-comment">&lt;!-- And so on --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_definition_lists">
+        <h3 id="x4-10-definition-lists"><bdi class="secno">4.10 </bdi>Definition lists<a class="self-link" aria-label="§" href="#_definition_lists"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;dl&gt;</code></p>
+        <p><strong>Content model</strong>: Mirrors [<cite><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] Specification</p>
+        <p><strong>Content model for <code>&lt;dt&gt;</code> children</strong>: text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+        <p><strong>Content model for <code>&lt;dd&gt;</code> children</strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">&lt;<span class="hljs-selector-tag">dl</span>&gt;
+  &lt;<span class="hljs-selector-tag">dt</span>&gt;Constant <span class="hljs-attribute">Width</span> Bold <span class="hljs-attribute">font</span>&lt;/<span class="hljs-selector-tag">dt</span>&gt;
+  &lt;<span class="hljs-selector-tag">dd</span>&gt;Used <span class="hljs-selector-tag">to</span> indicate user <span class="hljs-selector-tag">input</span>&lt;/<span class="hljs-selector-tag">dd</span>&gt;
+&lt;/<span class="hljs-selector-tag">dl</span>&gt;</code></pre>
+      </section>
+      <section data-type="sect2" id="_blockquote">
+        <h3 id="x4-11-blockquote"><bdi class="secno">4.11 </bdi>Blockquote<a class="self-link" aria-label="§" href="#_blockquote"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;blockquote&gt;</code></p>
+        <p><strong>Content model</strong>: Either of the following is acceptable:</p>
+        <ul>
+          <li>
+            <p>Text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+          </li>
+          <li>
+            <p>Zero or more <a href="#block_elements">Block Elements</a></p>
+          </li>
+        </ul>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>When in the course of human events...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"attribution"</span>&gt;</span>U.S. Declaration of Independence<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span></code></pre>
+	<p><strong>Note</strong>: If the blockquote is an epigraph, add <code>data-type="epigraph"</code>, e.g.:</p>
+	<pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"chapter"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Conclusion<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"epigraph"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It ain't over till it's over.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"attribution"</span>&gt;</span>Yogi Berra<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">blockquote</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>In this final chapter of the book, we will…<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_equation">
+        <h3 id="x4-12-equation"><bdi class="secno">4.12 </bdi>Equation<a class="self-link" aria-label="§" href="#_equation"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;div&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="equation"</code> <span data-type="footnote">(From [<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>]; no close match in [<cite><a class="bibref" data-link-type="biblio" href="#bib-epub3ssv" title="EPUB 3 Structural Semantics Vocabulary">EPUB3SSV</a></cite>])</span></p>
+        <p><strong>Note:</strong> HTMLBook supports embedded MathML in HTML content documents, which can be used here.</p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"equation"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h5</span>&gt;</span>Pythagorean Theorem<span class="hljs-tag">&lt;/<span class="hljs-name">h5</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">math</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">"http://www.w3.org/1998/Math/MathML"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">msup</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">mi</span>&gt;</span>a<span class="hljs-tag">&lt;/<span class="hljs-name">mi</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">mn</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">mn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">msup</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mo</span>&gt;</span>+<span class="hljs-tag">&lt;/<span class="hljs-name">mo</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">msup</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">mi</span>&gt;</span>b<span class="hljs-tag">&lt;/<span class="hljs-name">mi</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">mn</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">mn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">msup</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">mo</span>&gt;</span>=<span class="hljs-tag">&lt;/<span class="hljs-name">mo</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">msup</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">mi</span>&gt;</span>c<span class="hljs-tag">&lt;/<span class="hljs-name">mi</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">mn</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">mn</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">msup</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">math</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_refentry" class="informative">
+        <h3 id="x4-13-reference-entries-refentries"><bdi class="secno">4.13 </bdi>Reference Entries (refentries)<a class="self-link" aria-label="§" href="#_refentry"></a></h3><p><em>This section is non-normative.</em></p>
+        <p><strong>Suggested HTML element</strong>: <code>&lt;div&gt;</code></p>
+        <p><strong>Suggested semantics</strong>: <code>class="refentry"</code></p>
+        <p><strong>Note:</strong> HTMLBook does not currently normatively specify structural semantics for reference entries as they are conceived in <a href="http://www.docbook.org/tdg/en/html/refentry.html">DocBook</a> ([<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>]) or <a href="http://docs.oasis-open.org/dita/v1.2/os/spec/common/reference2.html#reference2">DITA</a> ([<cite><a class="bibref" data-link-type="biblio" href="#bib-dita" title="Darwin Information Typing Architecture (DITA) Version 1.2">DITA</a></cite>]). Use of <code>&lt;div class="refentry"&gt;</code> is suggested for marking up reference entries. The following example illustrates XHTML5 markup one might use for refentry content, which captures DocBook-style semantics</p>
+        <p><strong>Example refentry paralleling [<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>]</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"refentry"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"refname"</span>&gt;</span>print<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"refpurpose"</span>&gt;</span>Output some text to stdout.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"refsynopsisdiv"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"synopsis"</span>&gt;</span>print "<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Hello World<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>"<span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"refsect1"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h6</span>&gt;</span>Description<span class="hljs-tag">&lt;/<span class="hljs-name">h6</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>More description would go here<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+      </section>
+    </section>
+    <section data-type="sect1" id="_inline_elements">
+      <h2 id="x5-inline-elements"><bdi class="secno">5. </bdi>Inline Elements<a class="self-link" aria-label="§" href="#_inline_elements"></a></h2>
+	<div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="3"><span>Note</span></div><div class="">HTMLBook is primarily focused on codifying <em>structural semantics</em> for book authoring, and as such, it does not formally define specifications for phrase-level semantics (such as the DocBook <a href="http://www.docbook.org/tdg/en/html/varname.html"><code>varname</code></a> or <a href="http://www.docbook.org/tdg/en/html/personname.html"><code>personname</code></a> elements) beyond that which is codified in the [<cite><a class="bibref" data-link-type="biblio" href="#bib-html5" title="HTML5">HTML5</a></cite>] specification. Nor does it formally define specifications for purely presentational markup (such as underline or strikethrough rendering). HTMLBook users are encouraged to employ the appropriate standard HTML5 phrasing elements for inline semantics when available (e.g., <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code>, <code>&lt;s&gt;</code>, <code>&lt;u&gt;</code>) and to use <code>&lt;span&gt;</code> elements with custom-defined classes in other cases, as illustrated in the following examples.</div></div>
+      <section data-type="sect2" id="_emphasis_generally_for_italic">
+        <h3 id="x5-1-emphasis-generally-for-italic"><bdi class="secno">5.1 </bdi>Emphasis (generally for italic)<a class="self-link" aria-label="§" href="#_emphasis_generally_for_italic"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;em&gt;</code></p>
+        <p><strong>Example:</strong></p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;<span class="hljs-selector-tag">I</span> &lt;<span class="hljs-selector-tag">em</span>&gt;love&lt;/<span class="hljs-selector-tag">em</span>&gt; <span class="hljs-selector-tag">HTML</span>!&lt;/<span class="hljs-selector-tag">p</span>&gt;</code></pre>
+      </section>
+      <section data-type="sect2" id="_strong_generally_for_bold">
+        <h3 id="x5-2-strong-generally-for-bold"><bdi class="secno">5.2 </bdi>Strong (generally for bold)<a class="self-link" aria-label="§" href="#_strong_generally_for_bold"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;strong&gt;</code></p>
+        <p><strong>Example:</strong></p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;<span class="hljs-selector-tag">I</span> &lt;<span class="hljs-selector-tag">strong</span>&gt;love&lt;/<span class="hljs-selector-tag">strong</span>&gt; <span class="hljs-selector-tag">HTML</span>!&lt;/<span class="hljs-selector-tag">p</span>&gt;</code></pre>
+      </section>
+      <section data-type="sect2" id="_literal_for_inline_code_elements_variables_functions_etc">
+        <h3 id="x5-3-literal-for-inline-code-elements-variables-functions-etc"><bdi class="secno">5.3 </bdi>Literal (for inline code elements: variables, functions, etc.)<a class="self-link" aria-label="§" href="#_literal_for_inline_code_elements_variables_functions_etc"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;code&gt;</code></p>
+        <p><strong>Example:</strong></p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;Enter &lt;<span class="hljs-selector-tag">code</span>&gt;echo "Hello World"&lt;/<span class="hljs-selector-tag">code</span>&gt; on the command line&lt;/<span class="hljs-selector-tag">p</span>&gt;</code></pre>
+      </section>
+      <section data-type="sect2" id="_general_purpose_phrase_markup_for_other_styling_underline_strikethrough_etc">
+        <h3 id="x5-4-general-purpose-phrase-markup-for-other-styling"><bdi class="secno">5.4 </bdi>General-purpose phrase markup for other styling<a class="self-link" aria-label="§" href="#_general_purpose_phrase_markup_for_other_styling_underline_strikethrough_etc"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;span&gt;</code></p>
+        <p><strong>Example:</strong></p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Use your own class attributes for custom styling for formatting 
+like <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"underline"</span>&gt;</span>underlined text<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_footnote_endnote">
+        <h3 id="x5-5-footnote-endnote"><bdi class="secno">5.5 </bdi>Footnote, endnote<a class="self-link" aria-label="§" href="#_footnote_endnote"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;span&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="footnote"</code></p>
+        <p><strong>Content model</strong>: text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Five out of every six people who try AsciiDoc prefer it to 
+Markdown<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"footnote"</span>&gt;</span>Totally made-up statistic<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+        <p><strong>Notes</strong>:</p>
+        <ul>
+          <li>
+            <p>The <code>&lt;span&gt;</code> element does not accept block element children (and as of April 2014, nor does any other HTML5 element that can be used in an inline context and is an acceptable semantic fit for footnotes). If you need to include multiple blocks of content in a footnote, use <code>&lt;br/&gt;</code> elements to delimit them, e.g.:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a really short paragraph.<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"footnote"</span>&gt;</span>Largely because I like 
+to put lots and lots of content in footnotes.<span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+For example, let me tell you a story about my dog...<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre></li>
+          <li>
+            <p>Desired rendering of footnote content (i.e., floating/moving footnotes to the bottom of a page or end of a section, adding appropriate marker symbols/numeration) should be handled by XSL/CSS stylesheet processing.</p>
+          </li>
+        </ul>
+      </section>
+      <section data-type="sect2" id="_cross_references">
+        <h3 id="x5-6-cross-references"><bdi class="secno">5.6 </bdi>Cross-references<a class="self-link" aria-label="§" href="#_cross_references"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;a&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="xref"</code> <span data-type="footnote">(From [<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>])</span>; an <code>href</code> attribute that should point to the id of a
+local HTMLBook resource referenced; <code>data-xrefstyle</code> (optional) for specifying the style of XREF</p>
+        <p><strong>Example:</strong></p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"html5"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"chapter"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Intro to HTML5<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>As I said at the beginning of <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"xref"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#html5"</span>&gt;</span>Chapter 1<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, HTML5 is great...<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Blah blah blah --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_index_term">
+        <h3 id="x5-7-index-term"><bdi class="secno">5.7 </bdi>Index Term<a class="self-link" aria-label="§" href="#_index_term"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;a&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>data-type="indexterm"</code>; for primary index entry value, use <code>data-primary</code>; for secondary index entry value, use <code>data-secondary</code>; for tertiary index entry value, use <code>data-tertiary</code>; for a "see" index reference, use <code>data-see</code>; for a "see also" index reference, use <code>data-seealso</code>; for a "sort" value to indicate alphabetization, use <code>data-primary-sortas</code>, <code>data-secondary-sortas</code>, or <code>data-tertiary-sortas</code>; for an "end-of-range" tag that marks the end of an index range, use <code>data-startref="id_of_opening_index_marker"</code> <span data-type="footnote">(Semantics from [<cite><a class="bibref" data-link-type="biblio" href="#bib-docbook" title="The DocBook Document Type">DOCBOOK</a></cite>])</span></p>
+        <p><strong>Content model</strong>: Empty</p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The Atlas build system<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"indexterm"</span> <span class="hljs-attr">data-primary</span>=<span class="hljs-string">"Atlas"</span> <span class="hljs-attr">data-secondary</span>=<span class="hljs-string">"build system"</span>/&gt;</span> lets 
+you build EPUB, Mobi, PDF, and HTML content<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_superscripts">
+        <h3 id="x5-8-superscripts"><bdi class="secno">5.8 </bdi>Superscripts<a class="self-link" aria-label="§" href="#_superscripts"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;sup&gt;</code></p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">&lt;<span class="hljs-selector-tag">p</span>&gt;The area of <span class="hljs-selector-tag">a</span> circle is πr&lt;<span class="hljs-selector-tag">sup</span>&gt;<span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">sup</span>&gt;&lt;/<span class="hljs-selector-tag">p</span>&gt;</code></pre>
+      </section>
+      <section data-type="sect2" id="_subscripts">
+        <h3 id="x5-9-subscripts"><bdi class="secno">5.9 </bdi>Subscripts<a class="self-link" aria-label="§" href="#_subscripts"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;sub&gt;</code></p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>The formula for water is H<span class="hljs-tag">&lt;<span class="hljs-name">sub</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">sub</span>&gt;<span class="hljs-name">O</span></span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+      </section>
+    </section>
+    <section data-type="sect1" id="_heading_elements">
+      <h2 id="x6-heading-elements"><bdi class="secno">6. </bdi>Heading Elements<a class="self-link" aria-label="§" href="#_heading_elements"></a></h2>
+      <section data-type="sect2" id="_headings">
+        <h3 id="x6-1-headings"><bdi class="secno">6.1 </bdi>Headings<a class="self-link" aria-label="§" href="#_headings"></a></h3>
+        <p><strong>HTML elements</strong>: <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, or <code>&lt;h6&gt;</code></p>
+        <p><strong>Content Model</strong>: text and/or zero or more <a href="#inline_elements">Inline Elements</a></p>
+        <p><strong>Notes</strong>: Many main book components (e.g., chapters, parts, appendixes) require headings. The appropriate
+element from <code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code> is outlined below, as well as in the corresponding documentation for these
+components:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs css">book title -&gt; <span class="hljs-selector-tag">h1</span>
+part title -&gt; <span class="hljs-selector-tag">h1</span>
+chapter title -&gt; <span class="hljs-selector-tag">h1</span>
+preface title -&gt; <span class="hljs-selector-tag">h1</span>
+appendix title -&gt; <span class="hljs-selector-tag">h1</span>
+colophon title -&gt; <span class="hljs-selector-tag">h1</span>
+dedication title -&gt; <span class="hljs-selector-tag">h1</span>
+glossary title -&gt; <span class="hljs-selector-tag">h1</span>
+bibliography title -&gt; <span class="hljs-selector-tag">h1</span>
+sect1 title -&gt; <span class="hljs-selector-tag">h1</span>
+sect2 title -&gt; <span class="hljs-selector-tag">h2</span>
+sect3 title -&gt; <span class="hljs-selector-tag">h3</span>
+sect4 title -&gt; <span class="hljs-selector-tag">h4</span>
+sect5 title -&gt; <span class="hljs-selector-tag">h5</span>
+sidebar title -&gt; <span class="hljs-selector-tag">h5</span></code></pre>
+      </section>
+      <section data-type="sect2" id="header_block">
+	<h3 id="x6-2-header"><bdi class="secno">6.2 </bdi>Header<a class="self-link" aria-label="§" href="#header_block"></a></h3>
+	<p><strong>HTML element</strong>: <code>&lt;header&gt;</code></p>
+	<p><strong>Content Model</strong>: A Heading element at the proper level designated (<code>h1</code>–<code>h5</code>) 
+	  for the parent Book Component, as outlined in the previous <a href="#_headings">Headings</a> section (e.g., an <code>&lt;h1&gt;</code> for a chapter <code>&lt;header&gt;</code>); then zero or more <code>&lt;p&gt;</code> elements for subtitles or author attributions, each of which must have a <code>data-type</code> of either <code>subtitle</code> or <code>author</code></p>
+	<p><strong>Example</strong>:</p>
+	<pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"chapter"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">header</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Chapter title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"subtitle"</span>&gt;</span>Chapter subtitle<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+  <span class="hljs-comment">&lt;!-- Chapter content here... --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></code></pre>
+      </section>
+    </section>
+    <section data-type="sect1" id="_interactive_elements">
+      <h2 id="x7-interactive-elements"><bdi class="secno">7. </bdi>Interactive Elements<a class="self-link" aria-label="§" href="#_interactive_elements"></a></h2>
+      <section data-type="sect2" id="_video">
+        <h3 id="x7-1-video"><bdi class="secno">7.1 </bdi>Video<a class="self-link" aria-label="§" href="#_video"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;video&gt;</code></p>
+        <p><strong>Example</strong>:</p>
+        <p><strong>Note</strong>: Fallback content is <em>strongly recommended</em> for output formats that do not support HTML5 interactive content</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">video</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"asteroids_video"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"480"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"270"</span> <span class="hljs-attr">controls</span>=<span class="hljs-string">"controls"</span> <span class="hljs-attr">poster</span>=<span class="hljs-string">"images/fallback_image.png"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video/html5_asteroids.mp4"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/mp4"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"video/html5_asteroids.ogg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"video/ogg"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Sorry, the <span class="hljs-symbol">&amp;lt;</span>video<span class="hljs-symbol">&amp;gt;</span> element not supported in your
+  reading system. View the video online at http://example.com.<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">video</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_audio">
+        <h3 id="x7-2-audio"><bdi class="secno">7.2 </bdi>Audio<a class="self-link" aria-label="§" href="#_audio"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;audio&gt;</code></p>
+        <p><strong>Note</strong>: Fallback content is <em>strongly recommended</em> for output formats that do not support HTML5 interactive content</p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">audio</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"new_slang"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"audio/new_slang.wav"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"audio/wav"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"audio/new_slang.mp3"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"audio/mp3"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">source</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"audionew_slang.ogg"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"audio/ogg"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>Sorry, the <span class="hljs-symbol">&amp;lt;</span>audio<span class="hljs-symbol">&amp;gt;</span> element is not supported in your
+  reading system. Hear the audio online at http://example.com.<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">audio</span>&gt;</span></code></pre>
+      </section>
+      <section data-type="sect2" id="_canvas">
+        <h3 id="x7-3-canvas"><bdi class="secno">7.3 </bdi>Canvas<a class="self-link" aria-label="§" href="#_canvas"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;canvas&gt;</code></p>
+        <p><strong>Notes</strong>: Should include fallbacks for environments that don’t support HTML5 or JavaScript (e.g., link or image).
+You may include <code>&lt;script&gt;</code> elements in your HTMLBook document <code>&lt;head&gt;</code> elements to include/reference JS code for
+Canvas handling.</p>
+        <p><strong>Examples</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">canvas</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"canvas"</span> <span class="hljs-attr">width</span>=<span class="hljs-string">"400"</span> <span class="hljs-attr">height</span>=<span class="hljs-string">"400"</span>&gt;</span>
+ Your browser does not support the HTML 5 Canvas. See the interactive example at http://example.com.
+<span class="hljs-tag">&lt;/<span class="hljs-name">canvas</span>&gt;</span></code></pre>
+      </section>
+    </section>
+    <section data-type="sect1" id="_comments">
+      <h2 id="x8-comments"><bdi class="secno">8. </bdi>Comments<a class="self-link" aria-label="§" href="#_comments"></a></h2>
+      <p>To add comments to an HTMLBook document, either use standard HTML/XML comment syntax:</p>
+      <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-comment">&lt;!-- This is a comment --&gt;</span></code></pre>
+
+      <p>Or add a <code>data-type="comment"</code> attribute to any HTML element, e.g.:</p>
+
+      <pre aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"comment"</span>&gt;</span>This is a comment preceding a paragraph of text<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This is a paragraph of text <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"comment"</span>&gt;</span>Inline comment in paragraph<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span></code></pre>
+    </section>
+    <section data-type="sect1" id="_metadata">
+      <h2 id="x9-metadata"><bdi class="secno">9. </bdi>Metadata<a class="self-link" aria-label="§" href="#_metadata"></a></h2>
+      <section data-type="sect2" id="_metadata_points">
+        <h3 id="x9-1-metadata-points"><bdi class="secno">9.1 </bdi>Metadata points<a class="self-link" aria-label="§" href="#_metadata_points"></a></h3>
+        <p><strong>HTML element</strong>: <code>&lt;meta&gt;</code></p>
+        <p><strong>Attribute requirements</strong>: <code>name</code> (for name of metadata point); <code>content</code> (for value of metadata point)</p>
+        <p><strong>Content model</strong>: Empty</p>
+        <p><strong>Note</strong>: All <code>&lt;meta&gt;</code> elements must be children of the <code>&lt;head&gt;</code> element of the HTML file.</p>
+        <p><strong>Example</strong>:</p>
+        <pre data-type="programlisting" aria-busy="false"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Title of the Book<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"isbn-13"</span> <span class="hljs-attr">content</span>=<span class="hljs-string">"9781449344856"</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span></code></pre>
+      </section>
+    </section>
+    <section data-type="sect1" id="_element_classification">
+      <h2 id="x10-element-classification"><bdi class="secno">10. </bdi>Element Classification<a class="self-link" aria-label="§" href="#_element_classification"></a></h2>
+      <section data-type="sect2" id="block_elements">
+        <h3 id="x10-1-block-elements"><bdi class="secno">10.1 </bdi>Block Elements<a class="self-link" aria-label="§" href="#block_elements"></a></h3>
+        <p>In HTMLBook, the majority of elements classified by the HTML5 specification as <a href="http://www.w3.org/TR/html5/dom.html#flow-content">Flow Content</a> (minus elements also categorized as <a href="http://www.w3.org/TR/html5/dom.html#heading-content">Heading Content</a>, <a href="http://www.w3.org/TR/html5/dom.html#phrasing-content">Phrasing Content</a>, and <a href="http://www.w3.org/TR/html5/dom.html#sectioning-content">Sectioning Content</a>) are considered to be Block Elements. Here is a complete list:</p>
+        <ul>
+          <li>
+            <p>
+              <code>&lt;address&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;aside&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;audio&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;blockquote&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;canvas&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;dd&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;details&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;div&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;dl&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;embed&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;fieldset&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;figure&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;form&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;hr&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;iframe&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;map&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p><code>&lt;math&gt;</code> (In MathML vocabulary; must be namespaced under <a href="http://www.w3.org/1998/Math/MathML">http://www.w3.org/1998/Math/MathML</a>)</p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;menu&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;object&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;ol&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;p&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;pre&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p><code>&lt;svg&gt;</code> (In SVG vocabulary; must be namespaced under <a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>)</p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;table&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;ul&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;video&gt;</code>
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section data-type="sect2" id="inline_elements">
+        <h3 id="x10-2-inline-elements"><bdi class="secno">10.2 </bdi>Inline Elements<a class="self-link" aria-label="§" href="#inline_elements"></a></h3>
+        <p>In HTMLBook, the majority of elements classified by the HTML5 specification as <a href="http://www.w3.org/TR/html5/dom.html#phrasing-content">Phrasing Content</a> are considered to be Inline Elements. Here is a complete list:</p>
+        <ul>
+          <li>
+            <p>
+              <code>&lt;a&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;abbr&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;b&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;bdi&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;bdo&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;br&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;button&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;command&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;cite&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;code&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;datalist&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;del&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;dfn&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;dt&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;em&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;i&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;input&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;img&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;ins&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;kbd&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;keygen&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;label&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;mark&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;meter&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;output&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;progress&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;q&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;ruby&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;s&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;samp&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;select&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;small&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;span&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;strong&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;sub&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;sup&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;textarea&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;time&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;u&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;var&gt;</code>
+            </p>
+          </li>
+          <li>
+            <p>
+              <code>&lt;wbr&gt;</code>
+            </p>
+          </li>
+        </ul>
+      </section>
+    </section>
+  
+
+<section id="references" class="appendix"><h2 id="a-references"><bdi class="secno">A. </bdi>References<a class="self-link" aria-label="§" href="#references"></a></h2><section id="normative-references">
+      <h3 id="a-1-normative-references"><bdi class="secno">A.1 </bdi>
+        Normative references
+      <a class="self-link" aria-label="§" href="#normative-references"></a></h3>
+    <dl class="bibliography">
+      <dt id="bib-html5">[HTML5]</dt><dd><a href="https://www.w3.org/TR/html5/"><cite>HTML5</cite></a>. Ian Hickson; Robin Berjon; Steve Faulkner; Travis Leithead; Erika Doyle Navara; Theresa O'Connor; Silvia Pfeiffer.  W3C. 27 March 2018. W3C Recommendation. URL: <a href="https://www.w3.org/TR/html5/">https://www.w3.org/TR/html5/</a></dd>
+    </dl></section><section id="informative-references">
+      <h3 id="a-2-informative-references"><bdi class="secno">A.2 </bdi>
+        Informative references
+      <a class="self-link" aria-label="§" href="#informative-references"></a></h3>
+    <dl class="bibliography">
+      <dt id="bib-dita">[DITA]</dt><dd><a href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html"><cite>Darwin Information Typing Architecture (DITA) Version 1.2</cite></a>. Kristen James Eberlein; Robert D. Anderson; Gershon Joseph. URL: <a href="http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html">http://docs.oasis-open.org/dita/v1.2/spec/DITA1.2-spec.html</a></dd><dt id="bib-docbook">[DOCBOOK]</dt><dd><a href="http://www.docbook.org/specs/docbook-4.5-spec.html"><cite>The DocBook Document Type</cite></a>. Norman Walsh.  OASIS. URL: <a href="http://www.docbook.org/specs/docbook-4.5-spec.html">http://www.docbook.org/specs/docbook-4.5-spec.html</a></dd><dt id="bib-epub3">[EPUB3]</dt><dd><a href="http://www.idpf.org/epub/30/spec/"><cite>EPUB 3 Overview</cite></a>.  IDPF. URL: <a href="http://www.idpf.org/epub/30/spec/">http://www.idpf.org/epub/30/spec/</a></dd><dt id="bib-epub3ssv">[EPUB3SSV]</dt><dd><a href="http://www.idpf.org/epub/vocab/structure/"><cite>EPUB 3 Structural Semantics Vocabulary</cite></a>.  IDPF. URL: <a href="http://www.idpf.org/epub/vocab/structure/">http://www.idpf.org/epub/vocab/structure/</a></dd><dt id="bib-epubindex">[EPUBINDEX]</dt><dd><a href="http://www.idpf.org/epub/idx/"><cite>EPUB Indexes 1.0</cite></a>.  IDPF. URL: <a href="http://www.idpf.org/epub/idx/">http://www.idpf.org/epub/idx/</a></dd>
+    </dl></section></section><p role="navigation" id="back-to-top">
+    <a href="#title"><abbr title="Back to Top">↑</abbr></a>
+  </p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>

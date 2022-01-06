@@ -1,0 +1,13 @@
+{
+  "name": "HTMLBook",
+  "uniqueIdentifier": "htmlbook.oreillymedia.github.io",
+  "version": "0.0.1",
+  "description": "HTMLBook spec https://github.com/oreillymedia/HTMLBook",
+  "entry": "index.html",
+  "viewport": {
+    "width": 800,
+    "height": 600
+  },
+  "author": "O’Reilly Media, Inc.",
+  "copyright": "free"
+}

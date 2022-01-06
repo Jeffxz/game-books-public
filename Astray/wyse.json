@@ -1,0 +1,13 @@
+{
+  "name": "Astray",
+  "uniqueIdentifier": "astray.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "HTML game from https://github.com/wwwtyro/Astray with some small fix",
+  "entry": "index.html",
+  "viewport": {
+    "width": 800,
+    "height": 600
+  },
+  "author": "wwwtyro",
+  "copyright": "free"
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="core.epub33.epub-specs.w3c.github.io">
+<metadata>
+	<dc:identifier id="core.epub33.epub-specs.w3c.github.io">core.epub33.epub-specs.w3c.github.io</dc:identifier>
+	<dc:title>epub33</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T00:47:19Z</meta>
+</metadata>
+<manifest>
+	<item id="ED-epub-33-20211218.html" media-type="text/html" href="ED-epub-33-20211218.html"/>
+</manifest>
+<spine>
+	<itemref idref="ED-epub-33-20211218.html"/>
+</spine>
+</package>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="astray.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="astray.gardenia-corp.com">astray.gardenia-corp.com</dc:identifier>
+	<dc:title>Astray</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T00:15:14Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" media-type="text/html" href="index.html"/>
+	<item id="Box2dWeb.min.js" media-type="application/javascript" href="Box2dWeb.min.js"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="Three.js" media-type="application/javascript" href="Three.js"/>
+	<item id="ball.png" media-type="image/png" href="ball.png"/>
+	<item id="brick.png" media-type="image/png" href="brick.png"/>
+	<item id="concrete.png" media-type="image/png" href="concrete.png"/>
+	<item id="jquery.js" media-type="application/javascript" href="jquery.js"/>
+	<item id="keyboard.js" media-type="application/javascript" href="keyboard.js"/>
+	<item id="maze.js" media-type="application/javascript" href="maze.js"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="htmlbook.oreillymedia.github.io">
+<metadata>
+	<dc:identifier id="htmlbook.oreillymedia.github.io">htmlbook.oreillymedia.github.io</dc:identifier>
+	<dc:title>HTMLBook</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T00:33:34Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" media-type="text/html" href="index.html"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

@@ -1,0 +1,14 @@
+{
+  "name": "Flappy Bird",
+  "uniqueIdentifier": "flappy-bord.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "HTML game from https://github.com/aaarafat/JS-Flappy-Bird",
+  "entry": "index.html",
+  "viewport": {
+    "width": 800,
+    "height": 600
+  },
+  "author": "aaarafat",
+  "copyright": "MIT",
+  "coverImage": "flappybird.png"
+}

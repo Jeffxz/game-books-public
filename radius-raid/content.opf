@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="radius-raid-js13k.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="radius-raid-js13k.gardenia-corp.com">radius-raid-js13k.gardenia-corp.com</dc:identifier>
+	<dc:title>Radius Raid</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T23:51:27Z</meta>
+</metadata>
+<manifest>
+	<item id="min.html" media-type="text/html" href="min.html"/>
+	<item id="LICENSE.md" media-type="text/markdown" href="LICENSE.md"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="index.html" media-type="text/html" href="index.html"/>
+	<item id="js_audio.js" media-type="application/javascript" href="js/audio.js"/>
+	<item id="js_bullet.js" media-type="application/javascript" href="js/bullet.js"/>
+	<item id="js_button.js" media-type="application/javascript" href="js/button.js"/>
+	<item id="js_definitions.js" media-type="application/javascript" href="js/definitions.js"/>
+	<item id="js_enemy.js" media-type="application/javascript" href="js/enemy.js"/>
+	<item id="js_explosion.js" media-type="application/javascript" href="js/explosion.js"/>
+	<item id="js_game.js" media-type="application/javascript" href="js/game.js"/>
+	<item id="js_hero.js" media-type="application/javascript" href="js/hero.js"/>
+	<item id="js_jsfxr.js" media-type="application/javascript" href="js/jsfxr.js"/>
+	<item id="js_levelpop.js" media-type="application/javascript" href="js/levelpop.js"/>
+	<item id="js_particle.js" media-type="application/javascript" href="js/particle.js"/>
+	<item id="js_particleemitter.js" media-type="application/javascript" href="js/particleemitter.js"/>
+	<item id="js_powerup.js" media-type="application/javascript" href="js/powerup.js"/>
+	<item id="js_storage.js" media-type="application/javascript" href="js/storage.js"/>
+	<item id="js_text.js" media-type="application/javascript" href="js/text.js"/>
+	<item id="js_textpop.js" media-type="application/javascript" href="js/textpop.js"/>
+	<item id="js_util.js" media-type="application/javascript" href="js/util.js"/>
+	<item id="min.zip" media-type="application/zip" href="min.zip"/>
+</manifest>
+<spine>
+	<itemref idref="min.html"/>
+</spine>
+</package>

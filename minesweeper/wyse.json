@@ -1,0 +1,10 @@
+{
+  "name": "Minesweeper",
+  "uniqueIdentifier": "minesweeper.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "Minesweeper from https://codepen.io/creme/pen/EqeXNJ",
+  "entry": "index.html",
+  "author": "creme",
+  "copyright": "MIT",
+  "coverImage": "minesweeper.png"
+}

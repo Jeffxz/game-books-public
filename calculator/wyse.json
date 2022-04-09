@@ -1,0 +1,10 @@
+{
+  "name": "calculator",
+  "uniqueIdentifier": "calculator.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "Online Tutorials",
+  "entry": "index.html",
+  "author": "",
+  "copyright": "MIT",
+  "coverImage": "calculator.png"
+}

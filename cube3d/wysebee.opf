@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="cube3d.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="cube3d.gardenia-corp.com">cube3d.gardenia-corp.com</dc:identifier>
+	<dc:title>cube3d</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-09T20:40:00Z</meta>
+</metadata>
+<manifest>
+	<item id="cube3d.html" fallback="wyse_fallback" media-type="text/html" href="cube3d.html"/>
+	<item id="META-INF_container.xml" media-type="application/xml" href="META-INF/container.xml"/>
+	<item id="cube3d.png" properties="cover-image" media-type="image/png" href="cube3d.png"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="cube3d.html"/>
+</spine>
+</package>

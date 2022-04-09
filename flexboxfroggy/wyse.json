@@ -5,5 +5,6 @@
   "description": "Flexbox Froggy is a game for learning CSS flexbox. Check it out at flexboxfroggy.com.",
   "entry": "index.html",
   "author": "thomaspark",
-  "copyright": "MIT"
+  "copyright": "MIT",
+  "coverImage": "flexboxfroggy.png"
 }

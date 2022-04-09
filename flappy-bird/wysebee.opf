@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="flappy-bord.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="flappy-bord.gardenia-corp.com">flappy-bord.gardenia-corp.com</dc:identifier>
+	<dc:title>Flappy Bird</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-09T20:41:28Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
+	<item id="META-INF_container.xml" media-type="application/xml" href="META-INF/container.xml"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="_config.yml" media-type="text/yaml" href="_config.yml"/>
+	<item id="flappybird.png" properties="cover-image" media-type="image/png" href="flappybird.png"/>
+	<item id="game.js" media-type="application/javascript" href="game.js"/>
+	<item id="img_BG.png" media-type="image/png" href="img/BG.png"/>
+	<item id="img_bird_b0.png" media-type="image/png" href="img/bird/b0.png"/>
+	<item id="img_bird_b1.png" media-type="image/png" href="img/bird/b1.png"/>
+	<item id="img_bird_b2.png" media-type="image/png" href="img/bird/b2.png"/>
+	<item id="img_botpipe.png" media-type="image/png" href="img/botpipe.png"/>
+	<item id="img_getready.png" media-type="image/png" href="img/getready.png"/>
+	<item id="img_go.png" media-type="image/png" href="img/go.png"/>
+	<item id="img_ground_g0.png" media-type="image/png" href="img/ground/g0.png"/>
+	<item id="img_ground_g1.png" media-type="image/png" href="img/ground/g1.png"/>
+	<item id="img_ground.png" media-type="image/png" href="img/ground.png"/>
+	<item id="img_tap_t0.png" media-type="image/png" href="img/tap/t0.png"/>
+	<item id="img_tap_t1.png" media-type="image/png" href="img/tap/t1.png"/>
+	<item id="img_toppipe.png" media-type="image/png" href="img/toppipe.png"/>
+	<item id="sfx_die.wav" media-type="audio/wave" href="sfx/die.wav"/>
+	<item id="sfx_flap.wav" media-type="audio/wave" href="sfx/flap.wav"/>
+	<item id="sfx_hit.wav" media-type="audio/wave" href="sfx/hit.wav"/>
+	<item id="sfx_score.wav" media-type="audio/wave" href="sfx/score.wav"/>
+	<item id="sfx_start.wav" media-type="audio/wave" href="sfx/start.wav"/>
+	<item id="style.css" media-type="text/css" href="style.css"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

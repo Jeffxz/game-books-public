@@ -1,0 +1,10 @@
+{
+  "name": "cube3d",
+  "uniqueIdentifier": "cube3d.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "",
+  "entry": "cube3d.html",
+  "author": "",
+  "copyright": "MIT",
+  "coverImage": "cube3d.png"
+}

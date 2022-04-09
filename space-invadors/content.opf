@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="SpaceInvaders.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="SpaceInvaders.gardenia-corp.com">SpaceInvaders.gardenia-corp.com</dc:identifier>
+	<dc:title>SpaceInvaders</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-01-06T23:56:14Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" media-type="text/html" href="index.html"/>
+	<item id="LICENSE" media-type="application/octet-stream" href="LICENSE"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="assets_css_skulls.png" media-type="image/png" href="assets/css/skulls.png"/>
+	<item id="assets_css_style.css" media-type="text/css" href="assets/css/style.css"/>
+	<item id="assets_img_bullet.png" media-type="image/png" href="assets/img/bullet.png"/>
+	<item id="assets_img_enemy-bullet.png" media-type="image/png" href="assets/img/enemy-bullet.png"/>
+	<item id="assets_img_explode.png" media-type="image/png" href="assets/img/explode.png"/>
+	<item id="assets_img_invader.png" media-type="image/png" href="assets/img/invader.png"/>
+	<item id="assets_img_invader32x32x4.png" media-type="image/png" href="assets/img/invader32x32x4.png"/>
+	<item id="assets_img_player.png" media-type="image/png" href="assets/img/player.png"/>
+	<item id="assets_img_starfield.png" media-type="image/png" href="assets/img/starfield.png"/>
+	<item id="assets_javascript_built_main-built.js" media-type="application/javascript" href="assets/javascript/built/main-built.js"/>
+	<item id="assets_javascript_built.js" media-type="application/javascript" href="assets/javascript/built.js"/>
+	<item id="assets_javascript_lib_phaser-no-physics.min.js" media-type="application/javascript" href="assets/javascript/lib/phaser-no-physics.min.js"/>
+	<item id="assets_javascript_lib_require.js" media-type="application/javascript" href="assets/javascript/lib/require.js"/>
+	<item id="assets_javascript_main.js" media-type="application/javascript" href="assets/javascript/main.js"/>
+	<item id="assets_javascript_module_Aliens.js" media-type="application/javascript" href="assets/javascript/module/Aliens.js"/>
+	<item id="assets_javascript_module_Background.js" media-type="application/javascript" href="assets/javascript/module/Background.js"/>
+	<item id="assets_javascript_module_Bullets.js" media-type="application/javascript" href="assets/javascript/module/Bullets.js"/>
+	<item id="assets_javascript_module_Explosions.js" media-type="application/javascript" href="assets/javascript/module/Explosions.js"/>
+	<item id="assets_javascript_module_HUD.js" media-type="application/javascript" href="assets/javascript/module/HUD.js"/>
+	<item id="assets_javascript_module_Level.js" media-type="application/javascript" href="assets/javascript/module/Level.js"/>
+	<item id="assets_javascript_module_Player.js" media-type="application/javascript" href="assets/javascript/module/Player.js"/>
+	<item id="assets_javascript_state_End.js" media-type="application/javascript" href="assets/javascript/state/End.js"/>
+	<item id="assets_javascript_state_Load.js" media-type="application/javascript" href="assets/javascript/state/Load.js"/>
+	<item id="assets_javascript_state_Play.js" media-type="application/javascript" href="assets/javascript/state/Play.js"/>
+	<item id="assets_javascript_state_Start.js" media-type="application/javascript" href="assets/javascript/state/Start.js"/>
+	<item id="indexOpt.html" media-type="text/html" href="indexOpt.html"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

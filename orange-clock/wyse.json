@@ -1,0 +1,10 @@
+{
+  "name": "Orange Clock",
+  "uniqueIdentifier": "orange-clock.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "Orange Clock from https://codepen.io/creme/pen/ReMBRJ",
+  "entry": "index.html",
+  "author": "creme",
+  "copyright": "MIT",
+  "coverImage": "orange-clock.png"
+}

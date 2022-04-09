@@ -1,0 +1,10 @@
+{
+  "name": "SpaceInvaders",
+  "uniqueIdentifier": "SpaceInvaders.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "This is a remake of the space invader phaser example, which you can find here: http://examples.phaser.io/",
+  "entry": "index.html",
+  "author": "StrykerKKD",
+  "copyright": "MIT",
+  "coverImage": "SpaceInvaders.png"
+}

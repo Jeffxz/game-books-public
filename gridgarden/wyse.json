@@ -1,0 +1,10 @@
+{
+  "name": "Grid Garden",
+  "uniqueIdentifier": "gridgarden.gardenia-corp.com",
+  "version": "0.0.1",
+  "description": "Grid Garden is a game for learning CSS grid layout. Check it out at cssgridgarden.com",
+  "entry": "index.html",
+  "author": "Thomas Park",
+  "copyright": "MIT",
+  "coverImage": "gridgarden.png"
+}

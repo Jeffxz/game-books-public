@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="calculator.gardenia-corp.com">
+<metadata>
+	<dc:identifier id="calculator.gardenia-corp.com">calculator.gardenia-corp.com</dc:identifier>
+	<dc:title>calculator</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-09T20:28:59Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
+	<item id="META-INF_container.xml" media-type="application/xml" href="META-INF/container.xml"/>
+	<item id="calculator.png" properties="cover-image" media-type="image/png" href="calculator.png"/>
+	<item id="style.css" media-type="text/css" href="style.css"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

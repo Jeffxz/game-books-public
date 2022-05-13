@@ -1,0 +1,11 @@
+{
+  "profile": "book",
+  "name": "The wasm-bindgen Guide",
+  "id": "TheWasmBindgenGuide.wysebee.com",
+  "description": "https://github.com/rustwasm/wasm-bindgen",
+  "author": "",
+  "readingOrder": [
+    "index.html"
+  ],
+  "coverImage": "favicon.png"
+}

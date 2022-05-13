@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "cube3d",
-  "uniqueIdentifier": "cube3d.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "cube3d.wysebee.com",
   "description": "",
-  "entry": "cube3d.html",
   "author": "",
-  "copyright": "MIT",
+  "readingOrder": [
+    "cube3d.html"
+  ],
   "coverImage": "cube3d.png"
 }

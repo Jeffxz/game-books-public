@@ -1,0 +1,11 @@
+{
+  "profile": "book",
+  "name": "The mdBook Documentation",
+  "id": "TheMdBookGuide.wysebee.com",
+  "description": "",
+  "author": "",
+  "readingOrder": [
+    "index.html"
+  ],
+  "coverImage": "favicon.png"
+}

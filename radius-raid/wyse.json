@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "Radius Raid",
-  "uniqueIdentifier": "radius-raid-js13k.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "radius-raid.wysebee.com",
   "description": "Radius Raid is a space themed shoot 'em up where you must blast away unrelenting enemies before they destroy you. The game features 13 enemy types, 5 powerups, parallax backgrounds, retro sound effects, and locally stored stats.",
-  "entry": "min.html",
   "author": "jackrugile",
-  "copyright": "MIT",
+  "readingOrder": [
+    "min.html"
+  ],
   "coverImage": "RadiusRaid.png"
 }

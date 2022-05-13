@@ -4,7 +4,7 @@
 	<dc:identifier id="flexboxfroggy.gardenia-corp.com">flexboxfroggy.gardenia-corp.com</dc:identifier>
 	<dc:title>flexboxfroggy</dc:title>
 	<dc:language>en</dc:language>
-	<meta property="dcterms:modified">2022-04-09T20:32:30Z</meta>
+	<meta property="dcterms:modified">2022-04-30T16:18:19Z</meta>
 </metadata>
 <manifest>
 	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
@@ -13,7 +13,6 @@
 	<item id="META-INF_container.xml" media-type="application/xml" href="META-INF/container.xml"/>
 	<item id="README.md" media-type="text/markdown" href="README.md"/>
 	<item id="_config.yml" media-type="text/yaml" href="_config.yml"/>
-	<item id="content.opf" media-type="application/oebps-package+xml" href="content.opf"/>
 	<item id="css_style.css" media-type="text/css" href="css/style.css"/>
 	<item id="favicon.ico" media-type="image/vnd.microsoft.icon" href="favicon.ico"/>
 	<item id="flexboxfroggy.png" properties="cover-image" media-type="image/png" href="flexboxfroggy.png"/>

@@ -1,0 +1,11 @@
+{
+  "profile": "book",
+  "name": "The wasm-pack Book",
+  "id": "TheWasmPackBook.wysebee.com",
+  "description": "https://github.com/rustwasm/wasm-pack",
+  "author": "",
+  "readingOrder": [
+    "index.html"
+  ],
+  "coverImage": "favicon.png"
+}

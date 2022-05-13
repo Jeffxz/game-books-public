@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "calculator",
-  "uniqueIdentifier": "calculator.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "calculator.wysebee.com",
   "description": "Online Tutorials",
-  "entry": "index.html",
   "author": "",
-  "copyright": "MIT",
+  "readingOrder": [
+    "index.html"
+  ],
   "coverImage": "calculator.png"
 }

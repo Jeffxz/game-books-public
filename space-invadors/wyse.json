@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "SpaceInvaders",
-  "uniqueIdentifier": "SpaceInvaders.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "space-invadors.wysebee.com",
   "description": "This is a remake of the space invader phaser example, which you can find here: http://examples.phaser.io/",
-  "entry": "index.html",
   "author": "StrykerKKD",
-  "copyright": "MIT",
+  "readingOrder": [
+    "index.html"
+  ],
   "coverImage": "SpaceInvaders.png"
 }

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="2048.wysebee.com">
+<metadata>
+	<dc:identifier id="2048.wysebee.com">2048.wysebee.com</dc:identifier>
+	<dc:title>2048</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-30T16:02:53Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
+	<item id="2048.png" properties="cover-image" media-type="image/png" href="2048.png"/>
+	<item id="CONTRIBUTING.md" media-type="text/markdown" href="CONTRIBUTING.md"/>
+	<item id="LICENSE.txt" media-type="text/plain" href="LICENSE.txt"/>
+	<item id="META-INF_container.xml" media-type="application/xml" href="META-INF/container.xml"/>
+	<item id="README.md" media-type="text/markdown" href="README.md"/>
+	<item id="Rakefile" media-type="application/octet-stream" href="Rakefile"/>
+	<item id="favicon.ico" media-type="image/vnd.microsoft.icon" href="favicon.ico"/>
+	<item id="js_animframe_polyfill.js" media-type="application/javascript" href="js/animframe_polyfill.js"/>
+	<item id="js_application.js" media-type="application/javascript" href="js/application.js"/>
+	<item id="js_bind_polyfill.js" media-type="application/javascript" href="js/bind_polyfill.js"/>
+	<item id="js_classlist_polyfill.js" media-type="application/javascript" href="js/classlist_polyfill.js"/>
+	<item id="js_game_manager.js" media-type="application/javascript" href="js/game_manager.js"/>
+	<item id="js_grid.js" media-type="application/javascript" href="js/grid.js"/>
+	<item id="js_html_actuator.js" media-type="application/javascript" href="js/html_actuator.js"/>
+	<item id="js_keyboard_input_manager.js" media-type="application/javascript" href="js/keyboard_input_manager.js"/>
+	<item id="js_local_storage_manager.js" media-type="application/javascript" href="js/local_storage_manager.js"/>
+	<item id="js_tile.js" media-type="application/javascript" href="js/tile.js"/>
+	<item id="meta_apple-touch-icon.png" media-type="image/png" href="meta/apple-touch-icon.png"/>
+	<item id="meta_apple-touch-startup-image-640x1096.png" media-type="image/png" href="meta/apple-touch-startup-image-640x1096.png"/>
+	<item id="meta_apple-touch-startup-image-640x920.png" media-type="image/png" href="meta/apple-touch-startup-image-640x920.png"/>
+	<item id="style_fonts_ClearSans-Bold-webfont.eot" media-type="application/vnd.ms-fontobject" href="style/fonts/ClearSans-Bold-webfont.eot"/>
+	<item id="style_fonts_ClearSans-Bold-webfont.svg" media-type="image/svg+xml" href="style/fonts/ClearSans-Bold-webfont.svg"/>
+	<item id="style_fonts_ClearSans-Bold-webfont.woff" media-type="font/woff" href="style/fonts/ClearSans-Bold-webfont.woff"/>
+	<item id="style_fonts_ClearSans-Light-webfont.eot" media-type="application/vnd.ms-fontobject" href="style/fonts/ClearSans-Light-webfont.eot"/>
+	<item id="style_fonts_ClearSans-Light-webfont.svg" media-type="image/svg+xml" href="style/fonts/ClearSans-Light-webfont.svg"/>
+	<item id="style_fonts_ClearSans-Light-webfont.woff" media-type="font/woff" href="style/fonts/ClearSans-Light-webfont.woff"/>
+	<item id="style_fonts_ClearSans-Regular-webfont.eot" media-type="application/vnd.ms-fontobject" href="style/fonts/ClearSans-Regular-webfont.eot"/>
+	<item id="style_fonts_ClearSans-Regular-webfont.svg" media-type="image/svg+xml" href="style/fonts/ClearSans-Regular-webfont.svg"/>
+	<item id="style_fonts_ClearSans-Regular-webfont.woff" media-type="font/woff" href="style/fonts/ClearSans-Regular-webfont.woff"/>
+	<item id="style_fonts_clear-sans.css" media-type="text/css" href="style/fonts/clear-sans.css"/>
+	<item id="style_helpers.scss" media-type="text/x-scss" href="style/helpers.scss"/>
+	<item id="style_main.css" media-type="text/css" href="style/main.css"/>
+	<item id="style_main.scss" media-type="text/x-scss" href="style/main.scss"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="the-wasm-bindgen-guide.wysebee.com">
+<metadata>
+	<dc:identifier id="the-wasm-bindgen-guide.wysebee.com">the-wasm-bindgen-guide.wysebee.com</dc:identifier>
+	<dc:title>The wasm-bindgen Guide</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-17T23:31:03Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
+	<item id="404.html" media-type="text/html" href="404.html"/>
+	<item id="FontAwesome_css_font-awesome.css" media-type="text/css" href="FontAwesome/css/font-awesome.css"/>
+	<item id="FontAwesome_fonts_FontAwesome.ttf" media-type="font/ttf" href="FontAwesome/fonts/FontAwesome.ttf"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.eot" media-type="application/vnd.ms-fontobject" href="FontAwesome/fonts/fontawesome-webfont.eot"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.svg" media-type="image/svg+xml" href="FontAwesome/fonts/fontawesome-webfont.svg"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.ttf" media-type="font/ttf" href="FontAwesome/fonts/fontawesome-webfont.ttf"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.woff" media-type="font/woff" href="FontAwesome/fonts/fontawesome-webfont.woff"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.woff2" media-type="font/woff2" href="FontAwesome/fonts/fontawesome-webfont.woff2"/>
+	<item id="META-INF_container.xml" media-type="application/xml" href="META-INF/container.xml"/>
+	<item id="_headers" media-type="application/octet-stream" href="_headers"/>
+	<item id="ayu-highlight.css" media-type="text/css" href="ayu-highlight.css"/>
+	<item id="book.js" media-type="application/javascript" href="book.js"/>
+	<item id="clipboard.min.js" media-type="application/javascript" href="clipboard.min.js"/>
+	<item id="contributing_design_describe.html" media-type="text/html" href="contributing/design/describe.html"/>
+	<item id="contributing_design_exporting-rust-struct.html" media-type="text/html" href="contributing/design/exporting-rust-struct.html"/>
+	<item id="contributing_design_exporting-rust.html" media-type="text/html" href="contributing/design/exporting-rust.html"/>
+	<item id="contributing_design_importing-js-struct.html" media-type="text/html" href="contributing/design/importing-js-struct.html"/>
+	<item id="contributing_design_importing-js.html" media-type="text/html" href="contributing/design/importing-js.html"/>
+	<item id="contributing_design_js-objects-in-rust.html" media-type="text/html" href="contributing/design/js-objects-in-rust.html"/>
+	<item id="contributing_design_rust-type-conversions.html" media-type="text/html" href="contributing/design/rust-type-conversions.html"/>
+	<item id="contributing_js-sys_adding-more-apis.html" media-type="text/html" href="contributing/js-sys/adding-more-apis.html"/>
+	<item id="contributing_js-sys_testing.html" media-type="text/html" href="contributing/js-sys/testing.html"/>
+	<item id="contributing_publishing.html" media-type="text/html" href="contributing/publishing.html"/>
+	<item id="contributing_team.html" media-type="text/html" href="contributing/team.html"/>
+	<item id="contributing_testing.html" media-type="text/html" href="contributing/testing.html"/>
+	<item id="contributing_web-sys_logging.html" media-type="text/html" href="contributing/web-sys/logging.html"/>
+	<item id="contributing_web-sys_overview.html" media-type="text/html" href="contributing/web-sys/overview.html"/>
+	<item id="contributing_web-sys_supporting-more-web-apis.html" media-type="text/html" href="contributing/web-sys/supporting-more-web-apis.html"/>
+	<item id="contributing_web-sys_testing.html" media-type="text/html" href="contributing/web-sys/testing.html"/>
+	<item id="css_chrome.css" media-type="text/css" href="css/chrome.css"/>
+	<item id="css_general.css" media-type="text/css" href="css/general.css"/>
+	<item id="css_print.css" media-type="text/css" href="css/print.css"/>
+	<item id="css_variables.css" media-type="text/css" href="css/variables.css"/>
+	<item id="elasticlunr.min.js" media-type="application/javascript" href="elasticlunr.min.js"/>
+	<item id="examples_2d-canvas.html" media-type="text/html" href="examples/2d-canvas.html"/>
+	<item id="examples_2d-canvas.png" media-type="image/png" href="examples/2d-canvas.png"/>
+	<item id="examples_add.html" media-type="text/html" href="examples/add.html"/>
+	<item id="examples_char.html" media-type="text/html" href="examples/char.html"/>
+	<item id="examples_closures.html" media-type="text/html" href="examples/closures.html"/>
+	<item id="examples_console-log.html" media-type="text/html" href="examples/console-log.html"/>
+	<item id="examples_dom.html" media-type="text/html" href="examples/dom.html"/>
+	<item id="examples_fetch.html" media-type="text/html" href="examples/fetch.html"/>
+	<item id="examples_hello-world.html" media-type="text/html" href="examples/hello-world.html"/>
+	<item id="examples_import-js.html" media-type="text/html" href="examples/import-js.html"/>
+	<item id="examples_julia.html" media-type="text/html" href="examples/julia.html"/>
+	<item id="examples_paint.html" media-type="text/html" href="examples/paint.html"/>
+	<item id="examples_performance.html" media-type="text/html" href="examples/performance.html"/>
+	<item id="examples_raytrace.html" media-type="text/html" href="examples/raytrace.html"/>
+	<item id="examples_request-animation-frame.html" media-type="text/html" href="examples/request-animation-frame.html"/>
+	<item id="examples_todomvc.html" media-type="text/html" href="examples/todomvc.html"/>
+	<item id="examples_wasm-in-wasm.html" media-type="text/html" href="examples/wasm-in-wasm.html"/>
+	<item id="examples_wasm-in-web-worker.html" media-type="text/html" href="examples/wasm-in-web-worker.html"/>
+	<item id="examples_wasm2js.html" media-type="text/html" href="examples/wasm2js.html"/>
+	<item id="examples_web-audio.html" media-type="text/html" href="examples/web-audio.html"/>
+	<item id="examples_webgl.html" media-type="text/html" href="examples/webgl.html"/>
+	<item id="examples_webrtc_datachannel.html" media-type="text/html" href="examples/webrtc_datachannel.html"/>
+	<item id="examples_websockets.html" media-type="text/html" href="examples/websockets.html"/>
+	<item id="examples_without-a-bundler.html" media-type="text/html" href="examples/without-a-bundler.html"/>
+	<item id="favicon.png" properties="cover-image" media-type="image/png" href="favicon.png"/>
+	<item id="favicon.svg" media-type="image/svg+xml" href="favicon.svg"/>
+	<item id="fonts_OPEN-SANS-LICENSE.txt" media-type="text/plain" href="fonts/OPEN-SANS-LICENSE.txt"/>
+	<item id="fonts_SOURCE-CODE-PRO-LICENSE.txt" media-type="text/plain" href="fonts/SOURCE-CODE-PRO-LICENSE.txt"/>
+	<item id="fonts_fonts.css" media-type="text/css" href="fonts/fonts.css"/>
+	<item id="fonts_open-sans-v17-all-charsets-300.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-300.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-300italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-300italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-600.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-600.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-600italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-600italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-700.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-700.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-700italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-700italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-800.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-800.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-800italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-800italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-regular.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-regular.woff2"/>
+	<item id="fonts_source-code-pro-v11-all-charsets-500.woff2" media-type="font/woff2" href="fonts/source-code-pro-v11-all-charsets-500.woff2"/>
+	<item id="highlight.css" media-type="text/css" href="highlight.css"/>
+	<item id="highlight.js" media-type="application/javascript" href="highlight.js"/>
+	<item id="introduction.html" media-type="text/html" href="introduction.html"/>
+	<item id="mark.min.js" media-type="application/javascript" href="mark.min.js"/>
+	<item id="package-lock.json" media-type="application/json" href="package-lock.json"/>
+	<item id="print.html" media-type="text/html" href="print.html"/>
+	<item id="reference_accessing-properties-of-untyped-js-values.html" media-type="text/html" href="reference/accessing-properties-of-untyped-js-values.html"/>
+	<item id="reference_arbitrary-data-with-serde.html" media-type="text/html" href="reference/arbitrary-data-with-serde.html"/>
+	<item id="reference_attributes_on-js-imports_catch.html" media-type="text/html" href="reference/attributes/on-js-imports/catch.html"/>
+	<item id="reference_attributes_on-js-imports_constructor.html" media-type="text/html" href="reference/attributes/on-js-imports/constructor.html"/>
+	<item id="reference_attributes_on-js-imports_extends.html" media-type="text/html" href="reference/attributes/on-js-imports/extends.html"/>
+	<item id="reference_attributes_on-js-imports_final.html" media-type="text/html" href="reference/attributes/on-js-imports/final.html"/>
+	<item id="reference_attributes_on-js-imports_getter-and-setter.html" media-type="text/html" href="reference/attributes/on-js-imports/getter-and-setter.html"/>
+	<item id="reference_attributes_on-js-imports_indexing-getter-setter-deleter.html" media-type="text/html" href="reference/attributes/on-js-imports/indexing-getter-setter-deleter.html"/>
+	<item id="reference_attributes_on-js-imports_js_class.html" media-type="text/html" href="reference/attributes/on-js-imports/js_class.html"/>
+	<item id="reference_attributes_on-js-imports_js_name.html" media-type="text/html" href="reference/attributes/on-js-imports/js_name.html"/>
+	<item id="reference_attributes_on-js-imports_js_namespace.html" media-type="text/html" href="reference/attributes/on-js-imports/js_namespace.html"/>
+	<item id="reference_attributes_on-js-imports_method.html" media-type="text/html" href="reference/attributes/on-js-imports/method.html"/>
+	<item id="reference_attributes_on-js-imports_module.html" media-type="text/html" href="reference/attributes/on-js-imports/module.html"/>
+	<item id="reference_attributes_on-js-imports_raw_module.html" media-type="text/html" href="reference/attributes/on-js-imports/raw_module.html"/>
+	<item id="reference_attributes_on-js-imports_static_method_of.html" media-type="text/html" href="reference/attributes/on-js-imports/static_method_of.html"/>
+	<item id="reference_attributes_on-js-imports_structural.html" media-type="text/html" href="reference/attributes/on-js-imports/structural.html"/>
+	<item id="reference_attributes_on-js-imports_variadic.html" media-type="text/html" href="reference/attributes/on-js-imports/variadic.html"/>
+	<item id="reference_attributes_on-js-imports_vendor_prefix.html" media-type="text/html" href="reference/attributes/on-js-imports/vendor_prefix.html"/>
+	<item id="reference_attributes_on-rust-exports_constructor.html" media-type="text/html" href="reference/attributes/on-rust-exports/constructor.html"/>
+	<item id="reference_attributes_on-rust-exports_getter-and-setter.html" media-type="text/html" href="reference/attributes/on-rust-exports/getter-and-setter.html"/>
+	<item id="reference_attributes_on-rust-exports_getter_with_clone.html" media-type="text/html" href="reference/attributes/on-rust-exports/getter_with_clone.html"/>
+	<item id="reference_attributes_on-rust-exports_inspectable.html" media-type="text/html" href="reference/attributes/on-rust-exports/inspectable.html"/>
+	<item id="reference_attributes_on-rust-exports_js_name.html" media-type="text/html" href="reference/attributes/on-rust-exports/js_name.html"/>
+	<item id="reference_attributes_on-rust-exports_readonly.html" media-type="text/html" href="reference/attributes/on-rust-exports/readonly.html"/>
+	<item id="reference_attributes_on-rust-exports_skip.html" media-type="text/html" href="reference/attributes/on-rust-exports/skip.html"/>
+	<item id="reference_attributes_on-rust-exports_skip_typescript.html" media-type="text/html" href="reference/attributes/on-rust-exports/skip_typescript.html"/>
+	<item id="reference_attributes_on-rust-exports_start.html" media-type="text/html" href="reference/attributes/on-rust-exports/start.html"/>
+	<item id="reference_attributes_on-rust-exports_typescript_custom_section.html" media-type="text/html" href="reference/attributes/on-rust-exports/typescript_custom_section.html"/>
+	<item id="reference_attributes_on-rust-exports_typescript_type.html" media-type="text/html" href="reference/attributes/on-rust-exports/typescript_type.html"/>
+	<item id="reference_browser-support.html" media-type="text/html" href="reference/browser-support.html"/>
+	<item id="reference_cli.html" media-type="text/html" href="reference/cli.html"/>
+	<item id="reference_deployment.html" media-type="text/html" href="reference/deployment.html"/>
+	<item id="reference_iterating-over-js-values.html" media-type="text/html" href="reference/iterating-over-js-values.html"/>
+	<item id="reference_js-promises-and-rust-futures.html" media-type="text/html" href="reference/js-promises-and-rust-futures.html"/>
+	<item id="reference_js-snippets.html" media-type="text/html" href="reference/js-snippets.html"/>
+	<item id="reference_optimize-size.html" media-type="text/html" href="reference/optimize-size.html"/>
+	<item id="reference_passing-rust-closures-to-js.html" media-type="text/html" href="reference/passing-rust-closures-to-js.html"/>
+	<item id="reference_receiving-js-closures-in-rust.html" media-type="text/html" href="reference/receiving-js-closures-in-rust.html"/>
+	<item id="reference_reference-types.html" media-type="text/html" href="reference/reference-types.html"/>
+	<item id="reference_rust-targets.html" media-type="text/html" href="reference/rust-targets.html"/>
+	<item id="reference_types_bool.html" media-type="text/html" href="reference/types/bool.html"/>
+	<item id="reference_types_boxed-jsvalue-slice.html" media-type="text/html" href="reference/types/boxed-jsvalue-slice.html"/>
+	<item id="reference_types_boxed-number-slices.html" media-type="text/html" href="reference/types/boxed-number-slices.html"/>
+	<item id="reference_types_char.html" media-type="text/html" href="reference/types/char.html"/>
+	<item id="reference_types_exported-rust-types.html" media-type="text/html" href="reference/types/exported-rust-types.html"/>
+	<item id="reference_types_imported-js-types.html" media-type="text/html" href="reference/types/imported-js-types.html"/>
+	<item id="reference_types_jsvalue.html" media-type="text/html" href="reference/types/jsvalue.html"/>
+	<item id="reference_types_number-slices.html" media-type="text/html" href="reference/types/number-slices.html"/>
+	<item id="reference_types_numbers.html" media-type="text/html" href="reference/types/numbers.html"/>
+	<item id="reference_types_pointers.html" media-type="text/html" href="reference/types/pointers.html"/>
+	<item id="reference_types_result.html" media-type="text/html" href="reference/types/result.html"/>
+	<item id="reference_types_str.html" media-type="text/html" href="reference/types/str.html"/>
+	<item id="reference_types_string.html" media-type="text/html" href="reference/types/string.html"/>
+	<item id="reference_types.html" media-type="text/html" href="reference/types.html"/>
+	<item id="reference_weak-references.html" media-type="text/html" href="reference/weak-references.html"/>
+	<item id="reference_working-with-duck-typed-interfaces.html" media-type="text/html" href="reference/working-with-duck-typed-interfaces.html"/>
+	<item id="searcher.js" media-type="application/javascript" href="searcher.js"/>
+	<item id="searchindex.js" media-type="application/javascript" href="searchindex.js"/>
+	<item id="searchindex.json" media-type="application/json" href="searchindex.json"/>
+	<item id="tomorrow-night.css" media-type="text/css" href="tomorrow-night.css"/>
+	<item id="wasm-bindgen-test_asynchronous-tests.html" media-type="text/html" href="wasm-bindgen-test/asynchronous-tests.html"/>
+	<item id="wasm-bindgen-test_browsers.html" media-type="text/html" href="wasm-bindgen-test/browsers.html"/>
+	<item id="wasm-bindgen-test_continuous-integration.html" media-type="text/html" href="wasm-bindgen-test/continuous-integration.html"/>
+	<item id="wasm-bindgen-test_usage.html" media-type="text/html" href="wasm-bindgen-test/usage.html"/>
+	<item id="web-sys_cargo-features.html" media-type="text/html" href="web-sys/cargo-features.html"/>
+	<item id="web-sys_function-overloads.html" media-type="text/html" href="web-sys/function-overloads.html"/>
+	<item id="web-sys_inheritance.html" media-type="text/html" href="web-sys/inheritance.html"/>
+	<item id="web-sys_type-translations.html" media-type="text/html" href="web-sys/type-translations.html"/>
+	<item id="web-sys_unstable-apis.html" media-type="text/html" href="web-sys/unstable-apis.html"/>
+	<item id="web-sys_using-web-sys.html" media-type="text/html" href="web-sys/using-web-sys.html"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

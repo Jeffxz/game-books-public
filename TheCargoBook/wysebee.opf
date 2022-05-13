@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="the-cargo-book.wysebee.com">
+<metadata>
+	<dc:identifier id="the-cargo-book.wysebee.com">the-cargo-book.wysebee.com</dc:identifier>
+	<dc:title>The Cargo Book</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-18T22:55:40Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
+	<item id="404.html" media-type="text/html" href="404.html"/>
+	<item id="FontAwesome_css_font-awesome.css" media-type="text/css" href="FontAwesome/css/font-awesome.css"/>
+	<item id="FontAwesome_fonts_FontAwesome.ttf" media-type="font/ttf" href="FontAwesome/fonts/FontAwesome.ttf"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.eot" media-type="application/vnd.ms-fontobject" href="FontAwesome/fonts/fontawesome-webfont.eot"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.svg" media-type="image/svg+xml" href="FontAwesome/fonts/fontawesome-webfont.svg"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.ttf" media-type="font/ttf" href="FontAwesome/fonts/fontawesome-webfont.ttf"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.woff" media-type="font/woff" href="FontAwesome/fonts/fontawesome-webfont.woff"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.woff2" media-type="font/woff2" href="FontAwesome/fonts/fontawesome-webfont.woff2"/>
+	<item id="appendix_git-authentication.html" media-type="text/html" href="appendix/git-authentication.html"/>
+	<item id="appendix_glossary.html" media-type="text/html" href="appendix/glossary.html"/>
+	<item id="ayu-highlight.css" media-type="text/css" href="ayu-highlight.css"/>
+	<item id="book.js" media-type="application/javascript" href="book.js"/>
+	<item id="clipboard.min.js" media-type="application/javascript" href="clipboard.min.js"/>
+	<item id="commands_build-commands.html" media-type="text/html" href="commands/build-commands.html"/>
+	<item id="commands_cargo-bench.html" media-type="text/html" href="commands/cargo-bench.html"/>
+	<item id="commands_cargo-build.html" media-type="text/html" href="commands/cargo-build.html"/>
+	<item id="commands_cargo-check.html" media-type="text/html" href="commands/cargo-check.html"/>
+	<item id="commands_cargo-clean.html" media-type="text/html" href="commands/cargo-clean.html"/>
+	<item id="commands_cargo-doc.html" media-type="text/html" href="commands/cargo-doc.html"/>
+	<item id="commands_cargo-fetch.html" media-type="text/html" href="commands/cargo-fetch.html"/>
+	<item id="commands_cargo-fix.html" media-type="text/html" href="commands/cargo-fix.html"/>
+	<item id="commands_cargo-generate-lockfile.html" media-type="text/html" href="commands/cargo-generate-lockfile.html"/>
+	<item id="commands_cargo-help.html" media-type="text/html" href="commands/cargo-help.html"/>
+	<item id="commands_cargo-init.html" media-type="text/html" href="commands/cargo-init.html"/>
+	<item id="commands_cargo-install.html" media-type="text/html" href="commands/cargo-install.html"/>
+	<item id="commands_cargo-locate-project.html" media-type="text/html" href="commands/cargo-locate-project.html"/>
+	<item id="commands_cargo-login.html" media-type="text/html" href="commands/cargo-login.html"/>
+	<item id="commands_cargo-metadata.html" media-type="text/html" href="commands/cargo-metadata.html"/>
+	<item id="commands_cargo-new.html" media-type="text/html" href="commands/cargo-new.html"/>
+	<item id="commands_cargo-owner.html" media-type="text/html" href="commands/cargo-owner.html"/>
+	<item id="commands_cargo-package.html" media-type="text/html" href="commands/cargo-package.html"/>
+	<item id="commands_cargo-pkgid.html" media-type="text/html" href="commands/cargo-pkgid.html"/>
+	<item id="commands_cargo-publish.html" media-type="text/html" href="commands/cargo-publish.html"/>
+	<item id="commands_cargo-report.html" media-type="text/html" href="commands/cargo-report.html"/>
+	<item id="commands_cargo-run.html" media-type="text/html" href="commands/cargo-run.html"/>
+	<item id="commands_cargo-rustc.html" media-type="text/html" href="commands/cargo-rustc.html"/>
+	<item id="commands_cargo-rustdoc.html" media-type="text/html" href="commands/cargo-rustdoc.html"/>
+	<item id="commands_cargo-search.html" media-type="text/html" href="commands/cargo-search.html"/>
+	<item id="commands_cargo-test.html" media-type="text/html" href="commands/cargo-test.html"/>
+	<item id="commands_cargo-tree.html" media-type="text/html" href="commands/cargo-tree.html"/>
+	<item id="commands_cargo-uninstall.html" media-type="text/html" href="commands/cargo-uninstall.html"/>
+	<item id="commands_cargo-update.html" media-type="text/html" href="commands/cargo-update.html"/>
+	<item id="commands_cargo-vendor.html" media-type="text/html" href="commands/cargo-vendor.html"/>
+	<item id="commands_cargo-verify-project.html" media-type="text/html" href="commands/cargo-verify-project.html"/>
+	<item id="commands_cargo-version.html" media-type="text/html" href="commands/cargo-version.html"/>
+	<item id="commands_cargo-yank.html" media-type="text/html" href="commands/cargo-yank.html"/>
+	<item id="commands_cargo.html" media-type="text/html" href="commands/cargo.html"/>
+	<item id="commands_general-commands.html" media-type="text/html" href="commands/general-commands.html"/>
+	<item id="commands_manifest-commands.html" media-type="text/html" href="commands/manifest-commands.html"/>
+	<item id="commands_package-commands.html" media-type="text/html" href="commands/package-commands.html"/>
+	<item id="commands_publishing-commands.html" media-type="text/html" href="commands/publishing-commands.html"/>
+	<item id="css_chrome.css" media-type="text/css" href="css/chrome.css"/>
+	<item id="css_general.css" media-type="text/css" href="css/general.css"/>
+	<item id="css_print.css" media-type="text/css" href="css/print.css"/>
+	<item id="css_variables.css" media-type="text/css" href="css/variables.css"/>
+	<item id="elasticlunr.min.js" media-type="application/javascript" href="elasticlunr.min.js"/>
+	<item id="faq.html" media-type="text/html" href="faq.html"/>
+	<item id="favicon.png" media-type="image/png" href="favicon.png"/>
+	<item id="fonts_OPEN-SANS-LICENSE.txt" media-type="text/plain" href="fonts/OPEN-SANS-LICENSE.txt"/>
+	<item id="fonts_SOURCE-CODE-PRO-LICENSE.txt" media-type="text/plain" href="fonts/SOURCE-CODE-PRO-LICENSE.txt"/>
+	<item id="fonts_fonts.css" media-type="text/css" href="fonts/fonts.css"/>
+	<item id="fonts_open-sans-v17-all-charsets-300.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-300.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-300italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-300italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-600.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-600.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-600italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-600italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-700.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-700.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-700italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-700italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-800.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-800.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-800italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-800italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-regular.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-regular.woff2"/>
+	<item id="fonts_source-code-pro-v11-all-charsets-500.woff2" media-type="font/woff2" href="fonts/source-code-pro-v11-all-charsets-500.woff2"/>
+	<item id="getting-started_first-steps.html" media-type="text/html" href="getting-started/first-steps.html"/>
+	<item id="getting-started_installation.html" media-type="text/html" href="getting-started/installation.html"/>
+	<item id="guide_build-cache.html" media-type="text/html" href="guide/build-cache.html"/>
+	<item id="guide_cargo-home.html" media-type="text/html" href="guide/cargo-home.html"/>
+	<item id="guide_cargo-toml-vs-cargo-lock.html" media-type="text/html" href="guide/cargo-toml-vs-cargo-lock.html"/>
+	<item id="guide_continuous-integration.html" media-type="text/html" href="guide/continuous-integration.html"/>
+	<item id="guide_creating-a-new-project.html" media-type="text/html" href="guide/creating-a-new-project.html"/>
+	<item id="guide_dependencies.html" media-type="text/html" href="guide/dependencies.html"/>
+	<item id="guide_project-layout.html" media-type="text/html" href="guide/project-layout.html"/>
+	<item id="guide_tests.html" media-type="text/html" href="guide/tests.html"/>
+	<item id="guide_why-cargo-exists.html" media-type="text/html" href="guide/why-cargo-exists.html"/>
+	<item id="guide_working-on-an-existing-project.html" media-type="text/html" href="guide/working-on-an-existing-project.html"/>
+	<item id="highlight.css" media-type="text/css" href="highlight.css"/>
+	<item id="highlight.js" media-type="application/javascript" href="highlight.js"/>
+	<item id="images_Cargo-Logo-Small.png" media-type="image/png" href="images/Cargo-Logo-Small.png"/>
+	<item id="images_auth-level-acl.png" media-type="image/png" href="images/auth-level-acl.png"/>
+	<item id="images_org-level-acl.png" media-type="image/png" href="images/org-level-acl.png"/>
+	<item id="images_winapi-features.svg" media-type="image/svg+xml" href="images/winapi-features.svg"/>
+	<item id="mark.min.js" media-type="application/javascript" href="mark.min.js"/>
+	<item id="print.html" media-type="text/html" href="print.html"/>
+	<item id="reference_build-script-examples.html" media-type="text/html" href="reference/build-script-examples.html"/>
+	<item id="reference_build-scripts.html" media-type="text/html" href="reference/build-scripts.html"/>
+	<item id="reference_cargo-targets.html" media-type="text/html" href="reference/cargo-targets.html"/>
+	<item id="reference_config.html" media-type="text/html" href="reference/config.html"/>
+	<item id="reference_environment-variables.html" media-type="text/html" href="reference/environment-variables.html"/>
+	<item id="reference_external-tools.html" media-type="text/html" href="reference/external-tools.html"/>
+	<item id="reference_features-examples.html" media-type="text/html" href="reference/features-examples.html"/>
+	<item id="reference_features.html" media-type="text/html" href="reference/features.html"/>
+	<item id="reference_future-incompat-report.html" media-type="text/html" href="reference/future-incompat-report.html"/>
+	<item id="reference_manifest.html" media-type="text/html" href="reference/manifest.html"/>
+	<item id="reference_overriding-dependencies.html" media-type="text/html" href="reference/overriding-dependencies.html"/>
+	<item id="reference_pkgid-spec.html" media-type="text/html" href="reference/pkgid-spec.html"/>
+	<item id="reference_profiles.html" media-type="text/html" href="reference/profiles.html"/>
+	<item id="reference_publishing.html" media-type="text/html" href="reference/publishing.html"/>
+	<item id="reference_registries.html" media-type="text/html" href="reference/registries.html"/>
+	<item id="reference_resolver.html" media-type="text/html" href="reference/resolver.html"/>
+	<item id="reference_semver.html" media-type="text/html" href="reference/semver.html"/>
+	<item id="reference_source-replacement.html" media-type="text/html" href="reference/source-replacement.html"/>
+	<item id="reference_specifying-dependencies.html" media-type="text/html" href="reference/specifying-dependencies.html"/>
+	<item id="reference_timings.html" media-type="text/html" href="reference/timings.html"/>
+	<item id="reference_unstable.html" media-type="text/html" href="reference/unstable.html"/>
+	<item id="reference_workspaces.html" media-type="text/html" href="reference/workspaces.html"/>
+	<item id="searcher.js" media-type="application/javascript" href="searcher.js"/>
+	<item id="searchindex.js" media-type="application/javascript" href="searchindex.js"/>
+	<item id="searchindex.json" media-type="application/json" href="searchindex.json"/>
+	<item id="tomorrow-night.css" media-type="text/css" href="tomorrow-night.css"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>

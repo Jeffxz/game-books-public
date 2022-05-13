@@ -1,13 +1,16 @@
 {
+  "profile": "wysebee",
+  "readingOrder": [
+    "ED-epub-33-20211218.html"
+  ],
+  "author": "",
   "name": "epub33",
-  "uniqueIdentifier": "core.epub33.epub-specs.w3c.github.io",
-  "version": "0.0.1",
-  "description": "epub 3.3 spec",
-  "entry": "ED-epub-33-20211218.html",
-  "viewport": {
-    "width": 800,
-    "height": 600
-  },
-  "author": "W3C",
-  "copyright": "free"
+  "id": "core.epub33.epub-specs.w3c.github.io",
+  "readingProgression": "ltr",
+  "resources": [
+    {
+      "url": "ED-epub-33-20211218.html",
+      "encodingFormat": "text/html"
+    }
+  ]
 }

@@ -1,13 +1,11 @@
 {
   "name": "2048",
-  "uniqueIdentifier": "2048.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "2048.wysebee.com",
   "description": "HTML game from https://github.com/gabrielecirulli/2048",
-  "entry": "index.html",
-  "viewport": {
-    "width": 800,
-    "height": 600
-  },
   "author": "gabrielecirulli",
-  "copyright": "MIT"
+  "readingOrder": [
+    "index.html"
+  ],
+  "coverImage": "2048.png",
+  "profile": "book"
 }

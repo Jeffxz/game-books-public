@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "Orange Clock",
-  "uniqueIdentifier": "orange-clock.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "orange-clock.wysebee.com",
   "description": "Orange Clock from https://codepen.io/creme/pen/ReMBRJ",
-  "entry": "index.html",
   "author": "creme",
-  "copyright": "MIT",
+  "readingOrder": [
+    "index.html"
+  ],
   "coverImage": "orange-clock.png"
 }

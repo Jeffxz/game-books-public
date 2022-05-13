@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "Minesweeper",
-  "uniqueIdentifier": "minesweeper.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "minesweeper.wysebee.com",
   "description": "Minesweeper from https://codepen.io/creme/pen/EqeXNJ",
-  "entry": "index.html",
   "author": "creme",
-  "copyright": "MIT",
+  "readingOrder": [
+    "index.html"
+  ],
   "coverImage": "minesweeper.png"
 }

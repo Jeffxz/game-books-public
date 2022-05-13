@@ -1,14 +1,11 @@
 {
-  "name": "Astray",
-  "uniqueIdentifier": "astray.gardenia-corp.com",
-  "version": "0.0.1",
+  "name": "astray",
+  "id": "astray.wysebee.com",
   "description": "HTML game from https://github.com/wwwtyro/Astray with some small fix",
-  "entry": "index.html",
-  "viewport": {
-    "width": 800,
-    "height": 600
-  },
   "author": "wwwtyro",
-  "copyright": "MIT",
-  "coverImage": "Astray.png"
+  "readingOrder": [
+    "index.html"
+  ],
+  "coverImage": "Astray.png",
+  "profile": "book"
 }

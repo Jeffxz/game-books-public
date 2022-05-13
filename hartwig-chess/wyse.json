@@ -1,10 +1,11 @@
 {
+  "profile": "book",
   "name": "3D-Hartwig-chess-set",
-  "uniqueIdentifier": "3D-Hartwig-chess-set.gardenia-corp.com",
-  "version": "0.0.1",
+  "id": "hartwig-chess.wysebee.com",
   "description": "3D chess game done in HTML/CSS/JS.",
-  "entry": "index.html",
   "author": "juliangarnier",
-  "copyright": "MIT",
+  "readingOrder": [
+    "index.html"
+  ],
   "coverImage": "img/apple-touch-icon.png"
 }

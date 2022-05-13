@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" version="3.0" xml:lang="en" unique-identifier="the-mdbook.wysebee.com">
+<metadata>
+	<dc:identifier id="the-mdbook.wysebee.com">the-mdbook.wysebee.com</dc:identifier>
+	<dc:title>The mdBook Documentation</dc:title>
+	<dc:language>en</dc:language>
+	<meta property="dcterms:modified">2022-04-18T20:45:06Z</meta>
+</metadata>
+<manifest>
+	<item id="index.html" fallback="wyse_fallback" media-type="text/html" href="index.html"/>
+	<item id="404.html" media-type="text/html" href="404.html"/>
+	<item id="FontAwesome_css_font-awesome.css" media-type="text/css" href="FontAwesome/css/font-awesome.css"/>
+	<item id="FontAwesome_fonts_FontAwesome.ttf" media-type="font/ttf" href="FontAwesome/fonts/FontAwesome.ttf"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.eot" media-type="application/vnd.ms-fontobject" href="FontAwesome/fonts/fontawesome-webfont.eot"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.svg" media-type="image/svg+xml" href="FontAwesome/fonts/fontawesome-webfont.svg"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.ttf" media-type="font/ttf" href="FontAwesome/fonts/fontawesome-webfont.ttf"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.woff" media-type="font/woff" href="FontAwesome/fonts/fontawesome-webfont.woff"/>
+	<item id="FontAwesome_fonts_fontawesome-webfont.woff2" media-type="font/woff2" href="FontAwesome/fonts/fontawesome-webfont.woff2"/>
+	<item id="ace.js" media-type="application/javascript" href="ace.js"/>
+	<item id="ayu-highlight.css" media-type="text/css" href="ayu-highlight.css"/>
+	<item id="book.js" media-type="application/javascript" href="book.js"/>
+	<item id="cli_build.html" media-type="text/html" href="cli/build.html"/>
+	<item id="cli_clean.html" media-type="text/html" href="cli/clean.html"/>
+	<item id="cli_completions.html" media-type="text/html" href="cli/completions.html"/>
+	<item id="cli_init.html" media-type="text/html" href="cli/init.html"/>
+	<item id="cli_serve.html" media-type="text/html" href="cli/serve.html"/>
+	<item id="cli_test.html" media-type="text/html" href="cli/test.html"/>
+	<item id="cli_watch.html" media-type="text/html" href="cli/watch.html"/>
+	<item id="clipboard.min.js" media-type="application/javascript" href="clipboard.min.js"/>
+	<item id="continuous-integration.html" media-type="text/html" href="continuous-integration.html"/>
+	<item id="css_chrome.css" media-type="text/css" href="css/chrome.css"/>
+	<item id="css_general.css" media-type="text/css" href="css/general.css"/>
+	<item id="css_print.css" media-type="text/css" href="css/print.css"/>
+	<item id="css_variables.css" media-type="text/css" href="css/variables.css"/>
+	<item id="editor.js" media-type="application/javascript" href="editor.js"/>
+	<item id="elasticlunr.min.js" media-type="application/javascript" href="elasticlunr.min.js"/>
+	<item id="favicon.png" properties="cover-image" media-type="image/png" href="favicon.png"/>
+	<item id="favicon.svg" media-type="image/svg+xml" href="favicon.svg"/>
+	<item id="fonts_OPEN-SANS-LICENSE.txt" media-type="text/plain" href="fonts/OPEN-SANS-LICENSE.txt"/>
+	<item id="fonts_SOURCE-CODE-PRO-LICENSE.txt" media-type="text/plain" href="fonts/SOURCE-CODE-PRO-LICENSE.txt"/>
+	<item id="fonts_fonts.css" media-type="text/css" href="fonts/fonts.css"/>
+	<item id="fonts_open-sans-v17-all-charsets-300.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-300.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-300italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-300italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-600.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-600.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-600italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-600italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-700.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-700.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-700italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-700italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-800.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-800.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-800italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-800italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-italic.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-italic.woff2"/>
+	<item id="fonts_open-sans-v17-all-charsets-regular.woff2" media-type="font/woff2" href="fonts/open-sans-v17-all-charsets-regular.woff2"/>
+	<item id="fonts_source-code-pro-v11-all-charsets-500.woff2" media-type="font/woff2" href="fonts/source-code-pro-v11-all-charsets-500.woff2"/>
+	<item id="for_developers_backends.html" media-type="text/html" href="for_developers/backends.html"/>
+	<item id="for_developers_mdbook-wordcount_Cargo.toml" media-type="application/toml" href="for_developers/mdbook-wordcount/Cargo.toml"/>
+	<item id="for_developers_mdbook-wordcount_src_main.rs" media-type="application/rls-services+xml" href="for_developers/mdbook-wordcount/src/main.rs"/>
+	<item id="for_developers_preprocessors.html" media-type="text/html" href="for_developers/preprocessors.html"/>
+	<item id="format_config.html" media-type="text/html" href="format/config.html"/>
+	<item id="format_configuration_environment-variables.html" media-type="text/html" href="format/configuration/environment-variables.html"/>
+	<item id="format_configuration_general.html" media-type="text/html" href="format/configuration/general.html"/>
+	<item id="format_configuration_preprocessors.html" media-type="text/html" href="format/configuration/preprocessors.html"/>
+	<item id="format_configuration_renderers.html" media-type="text/html" href="format/configuration/renderers.html"/>
+	<item id="format_example.rs" media-type="application/rls-services+xml" href="format/example.rs"/>
+	<item id="format_images_rust-logo-blk.svg" media-type="image/svg+xml" href="format/images/rust-logo-blk.svg"/>
+	<item id="format_markdown.html" media-type="text/html" href="format/markdown.html"/>
+	<item id="format_mathjax.html" media-type="text/html" href="format/mathjax.html"/>
+	<item id="format_mdbook.html" media-type="text/html" href="format/mdbook.html"/>
+	<item id="format_summary.html" media-type="text/html" href="format/summary.html"/>
+	<item id="format_theme_editor.html" media-type="text/html" href="format/theme/editor.html"/>
+	<item id="format_theme_index-hbs.html" media-type="text/html" href="format/theme/index-hbs.html"/>
+	<item id="format_theme_syntax-highlighting.html" media-type="text/html" href="format/theme/syntax-highlighting.html"/>
+	<item id="guide_creating.html" media-type="text/html" href="guide/creating.html"/>
+	<item id="guide_installation.html" media-type="text/html" href="guide/installation.html"/>
+	<item id="guide_reading.html" media-type="text/html" href="guide/reading.html"/>
+	<item id="highlight.css" media-type="text/css" href="highlight.css"/>
+	<item id="highlight.js" media-type="application/javascript" href="highlight.js"/>
+	<item id="mark.min.js" media-type="application/javascript" href="mark.min.js"/>
+	<item id="misc_contributors.html" media-type="text/html" href="misc/contributors.html"/>
+	<item id="mode-rust.js" media-type="application/javascript" href="mode-rust.js"/>
+	<item id="print.html" media-type="text/html" href="print.html"/>
+	<item id="searcher.js" media-type="application/javascript" href="searcher.js"/>
+	<item id="searchindex.js" media-type="application/javascript" href="searchindex.js"/>
+	<item id="searchindex.json" media-type="application/json" href="searchindex.json"/>
+	<item id="theme-dawn.js" media-type="application/javascript" href="theme-dawn.js"/>
+	<item id="theme-tomorrow_night.js" media-type="application/javascript" href="theme-tomorrow_night.js"/>
+	<item id="tomorrow-night.css" media-type="text/css" href="tomorrow-night.css"/>
+	<item id="wyse_nav" properties="nav" media-type="application/xhtml+xml" href="wyse/nav.xhtml"/>
+	<item id="wyse_fallback" media-type="application/xhtml+xml" href="wyse/fallback.xhtml"/>
+</manifest>
+<spine>
+	<itemref idref="index.html"/>
+</spine>
+</package>
